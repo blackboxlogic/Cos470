@@ -42,7 +42,6 @@
   * Primitives
   * var
   * comments
-  * nullable?
   * Enums
   * Objects (byref)
   * Strings (Imutable)
@@ -87,9 +86,17 @@
   * interactive window
 * Data structures
   * arrays
+    * initializers
+	* indexing
+	* mutlidimentional
   * IEnumerable
+    * yield return
+    * can't change a collection while enumerating it
+    * linq
   * Parametric Typing, can use primitives
   * List
   * dictionary
+    * hashing (don't hash strings between runs)
   * hashset
-  
+* Linq
+

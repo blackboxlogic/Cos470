@@ -23,9 +23,11 @@ An overview of the c#.net, covering lanuage details and applications that can be
   * Lecture: Introduction to c#
   * For next class:
     * Assignment 0: Setup Git and commit your Survey
-    * Read: [List<T>](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.list-1?view=netframework-4.8)
+    * Read: [List<T>](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.list-1)
 * 2019/09/05
-  * TBD
+  * Lecture: TBD
+  * For next class:
+    * Assignment 1: Dollar words
 * 2019/09/10
   * TBD
 * 2019/09/12
