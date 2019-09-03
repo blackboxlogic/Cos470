@@ -90,13 +90,13 @@
 	* indexing
 	* mutlidimentional
   * IEnumerable
-    * yield return
+    * Parametric Typing, (primitives!)
     * can't change a collection while enumerating it
-    * linq
-  * Parametric Typing, can use primitives
+    * yield return
+	* linq
   * List
   * dictionary
-    * hashing (don't hash strings between runs)
+    * hashing (hashing strings, careful)
   * hashset
 * Linq
 
