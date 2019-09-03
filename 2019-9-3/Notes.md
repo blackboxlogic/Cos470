@@ -8,8 +8,8 @@
 * Myself
 * [Course resources](www.github.com/blackboxlogic/Cos470)
 * Course topics: c#, details and applications
-  * Using git for assignments
-  * Code review
+  * Using git for assignments (talk to me about privacy concerns)
+  * Code review, and ego
   * Grading
   * Tools you'll need: VS, github account, maybe more later
   * Location, here, lab?
@@ -59,24 +59,37 @@
   * Flow control
     * If else (short circuit)
 	* while do for foreach goto
-  * Adding a class
-    * static classes
-  * Functions
-    * scope static returnType name parameters
-	* overloaded
-	* constructors / destructors / IDisposable
-  * Fields vs properties
-    * static fields
   * Exceptions
     * throw
 	* try
 	* catch
 	* catch type
 	* rethrow
+  * Adding a class
+    * static classes
+  * Functions
+    * return
+	* scope static returnType name parameters
+	* overloaded
+	* constructors / destructors / IDisposable
+  * Fields vs properties
+    * static fields
+	* const
 * Debugging
+  * errors window
+  * output window
   * Breakpoints
-  * Step in out over
+  * Step in, out, over
+  * explore objects, pin values
   * call stack
+  * unhandled exceptions, exception details
   * imediate window
-  * output
-  * errors
+  * interactive window
+* Data structures
+  * arrays
+  * IEnumerable
+  * Parametric Typing, can use primitives
+  * List
+  * dictionary
+  * hashset
+  

@@ -21,8 +21,9 @@ An overview of the c#.net, covering lanuage details and applications that can be
 ## Course Schedule
 * 2019/09/03
   * Lecture: Introduction to c#
-  * Assignment 0: Setup Git and commit your Survey
-    * Due: Next Class Thursday 2019/09/05
+  * For next class:
+    * Assignment 0: Setup Git and commit your Survey
+    * Read: [List<T>](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.list-1?view=netframework-4.8)
 * 2019/09/05
   * TBD
 * 2019/09/10
@@ -47,7 +48,7 @@ An overview of the c#.net, covering lanuage details and applications that can be
 * Midterm
 * Final
 
-## Polcies
+## Policies
 * DO work togeather if it helps you learn
 * DO NOT copy each other's work
 * No politics in class
