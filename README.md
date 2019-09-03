@@ -23,7 +23,7 @@ An overview of the c#.net, covering lanuage details and applications that can be
 ## Course Schedule
 * 2019/09/03
   * Lecture: Introduction to c#
-  * Assignment 1: Setup Git and commit your Survey
+  * Assignment 0: Setup Git and commit your Survey
     * Due: Next Class Thursday 2019/09/05
 * 2019/09/05
   * Lecture: Collections and Linq
