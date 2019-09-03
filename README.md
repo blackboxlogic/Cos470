@@ -3,10 +3,15 @@
 An overview of the c#.net, covering lanuage details and applications that can be build with it. We'll incorperate tools/process commonly used in software developement.
 
 ## Details
-* Lecturer: Alex Hennings
-* Office Hours: ?
 * Class Times: Tuesday/Thursday 4:10pm to 5:25pm
-* Class Location: ?
+* Class Location: Payson Smith 306, USM Portland
+* Class Number: [85202](https://usm.maine.edu/courses?keywords=470&term=2010&career=1&subject=COS&coursenumber=All&meetingstarttime_1=&meetingendtime=&meetingstarttime=All&location=All&startdatedate%5Bdate%5D=&enddatedate%5Bdate%5D=&enrollmentstatus=1)
+* Credits: 3
+* Dates: 9/3/2019 - 12/13/2019
+* Documentation: [github.com/blackboxlogic/Cos470]
+* Lecturer: Alex Hennings
+  * Contact: alex.hennings@maine.edu
+  * Office Hours: ?
 
 ## Things You Need
 * Access to a computer with:
@@ -21,11 +26,10 @@ An overview of the c#.net, covering lanuage details and applications that can be
   * Assignment 1: Setup Git and commit your Survey
     * Due: Next Class Thursday 2019/09/05
 * 2019/09/05
+  * Lecture: Collections and Linq
 * 2019/09/10
+  * ?
 * 2019/09/12
-* 2019/09/17
-* 2019/09/19
-* 2019/09/24
 ...
 
 ## Grading
@@ -39,11 +43,13 @@ An overview of the c#.net, covering lanuage details and applications that can be
   * 5% Respond to code review from classmates
   * 5% Consistant code style
   * 5% Organized code
+* Assignments sibmitted late may lose points
+* Improvements (even late ones) may gain points
 
 #### Tests 40% of course
 * Midterm
 * Final
 
 ## Polcies
-* No politics in class
 * DO work togeather if it helps you learn. DO NOT copy each other's work.
+* No politics in class
