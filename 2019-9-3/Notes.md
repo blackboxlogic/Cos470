@@ -21,13 +21,13 @@
   * Git
 * Open VS, new CMD project, run it
 * Tour VS
-  * output
-  * errors
   * toolbars
   * Solution explorer
   * Team explorer
-  * Imediate Window
-  * InteliSense, Suggestions
+* Git
+  * Repo
+  * Branch
+  * commit
 * Tour Code
   * using
   * namespace
@@ -35,11 +35,13 @@
   * Main()
   * ?
 * c# Intro
+  * InteliSense, Suggestions
   * Variables
   * Scope
   * Types
   * Primitives
   * var
+  * comments
   * nullable?
   * Enums
   * Objects (byref)
@@ -56,8 +58,25 @@
 	* Other ?
   * Flow control
     * If else (short circuit)
-	* while for foreach goto
+	* while do for foreach goto
+  * Adding a class
+    * static classes
   * Functions
     * scope static returnType name parameters
 	* overloaded
-	* constructors
+	* constructors / destructors / IDisposable
+  * Fields vs properties
+    * static fields
+  * Exceptions
+    * throw
+	* try
+	* catch
+	* catch type
+	* rethrow
+* Debugging
+  * Breakpoints
+  * Step in out over
+  * call stack
+  * imediate window
+  * output
+  * errors
