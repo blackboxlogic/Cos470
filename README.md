@@ -27,9 +27,11 @@ An overview of the c#.net, covering language details and applications that can b
 * 2019/09/05
   * Lecture: [Managing Data]()
   * For next class:
-    * Read: [TBD](TDB)
+    * Read: [Dictionary<K, V>](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.dictionary-2)
   * Start:
     * [Assignment 1](https://github.com/blackboxlogic/Cos470/blob/master/Assignment1/Assignment.md): Dollar words (due on 2019/09/12)
+* 2019/09/05
+  * TBD
 
 ## Grading
 #### Assignments 60% of course
@@ -42,8 +44,8 @@ An overview of the c#.net, covering language details and applications that can b
   * 5% Respond to code review from classmates
   * 5% Consistent code style
   * 5% Organized code
-* Assignments submitted late may lose points
-* Improvements (even late ones) may gain points
+* Assignments whose first substantial submission is late will loose 10 points per class.
+* Improvements to your assignment responding to code review (even late ones) will gain back points originally lost for whatever was wrong.
 
 #### Tests 40% of course
 * Midterm
