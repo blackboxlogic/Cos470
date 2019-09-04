@@ -20,8 +20,8 @@ Assumption: you already have your Cos470 repo checked out to your computer and V
 1. Program your application to
    1. Read the text file
       1. Hint: The `File` class, `using System.IO`;
-      1. Hist: If you use a file `Stream`, remember to `Dispose()` it.
-   1. Find all "Dollar words"
+      1. Hint: If you use a file `Stream`, remember to `Dispose()` it.
+   1. Find all "Dollar words" as described in "Context" above
       1. Hint: business logic code should be cleanly separated from user interface code
    1. Write the dollar words to a file like: "DollarWords.txt"
    1. Write some aggregate information to the console, *for example*:
