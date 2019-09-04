@@ -1,6 +1,6 @@
 # Syllabus: COS 470 "Topic with c#"
 ## Description
-An overview of the c#.net, covering lanuage details and applications that can be build with it. We'll incorperate tools/process commonly used in software developement.
+An overview of the c#.net, covering language details and applications that can be build with it. We'll incorporate tools/process commonly used in software development.
 
 ## Details
 * Class Times: Tuesday/Thursday 4:10pm to 5:25pm
@@ -10,7 +10,7 @@ An overview of the c#.net, covering lanuage details and applications that can be
 * Documentation: [github.com/blackboxlogic/Cos470]
 * Lecturer: Alex Hennings
   * Contact: alex.hennings@maine.edu
-  * Office Hours: TBD
+  * Office Hours: 3pm - 4pm Tuesday/Thursday in the CS Lab
 
 ## Things You Need
 * Access to a computer with:
@@ -20,17 +20,16 @@ An overview of the c#.net, covering lanuage details and applications that can be
 
 ## Course Schedule
 * 2019/09/03
-  * Lecture: Introduction to c#
+  * Lecture: [Introduction to c#]()
   * For next class:
-    * Assignment 0: Setup Git and commit your Survey
+    * Complete: [Assignment 0](https://github.com/blackboxlogic/Cos470/blob/master/Assignment0/Assignment.md): This assignment will NOT be graded, but do it.
     * Read: [List<T>](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.list-1)
 * 2019/09/05
-  * Lecture: TBD
+  * Lecture: [Managing Data]()
   * For next class:
-    * Assignment 1: Dollar words
-* 2019/09/10
-  * TBD
-* 2019/09/12
+    * Read: [TBD](TDB)
+  * Start:
+    * [Assignment 1](https://github.com/blackboxlogic/Cos470/blob/master/Assignment1/Assignment.md): Dollar words (due on 2019/09/12)
 
 ## Grading
 #### Assignments 60% of course
@@ -38,12 +37,12 @@ An overview of the c#.net, covering lanuage details and applications that can be
 * 35% Use of an organized process
   * 5% Code is in GitHub
   * 5% Commits are well sized and commented
-  * 5% Assignements are separate branches or repos
+  * 5% Assignments are separate branches or repos
   * 5% Provide code review to classmates
   * 5% Respond to code review from classmates
-  * 5% Consistant code style
+  * 5% Consistent code style
   * 5% Organized code
-* Assignments sibmitted late may lose points
+* Assignments submitted late may lose points
 * Improvements (even late ones) may gain points
 
 #### Tests 40% of course
@@ -51,6 +50,6 @@ An overview of the c#.net, covering lanuage details and applications that can be
 * Final
 
 ## Policies
-* DO work togeather if it helps you learn
+* DO work together if it helps you learn
 * DO NOT copy each other's work
 * No politics in class
