@@ -22,15 +22,15 @@ Assumption: you already have your Cos470 repo checked out to your computer and V
       1. Hint: The `File` class, `using System.IO`;
       1. Hint: If you use a file `Stream`, remember to `Dispose()` it.
    1. Find all "Dollar words" as described in "Context" above
-      1. Hint: business logic code should be cleanly separated from user interface code
+      1. Hint: There should be a clear separation between user interface code, business logic code, and File IO code.
    1. Write the dollar words to a file like: "DollarWords.txt"
    1. Write some aggregate information to the console, *for example*:
       1. what portion of words are dollar words
       1. how long it took
       1. what was the longest/shortest dollar word
       1. what is the most expensive word
-1. Save a screenshot of the console output into the project directory
-1. Commit this work (with an *informative commit message*), and push it to github
+1. Save the console output into the project directory (screenshot or copy-pasta into a text file)
+1. Commit this work (with a *descriptive commit message*), and push it to github
 
 ## Reading:
 * [Dictionary<K, V>](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.dictionary-2)

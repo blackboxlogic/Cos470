@@ -20,18 +20,18 @@ An overview of the c#.net, covering language details and applications that can b
 
 ## Course Schedule
 * 2019/09/03
-  * Lecture: [Introduction to c#]()
+  * Lecture: [Introduction to c#](https://github.com/blackboxlogic/Cos470/blob/master/Notes/2019-09-03.md)
   * For next class:
     * Complete: [Assignment 0](https://github.com/blackboxlogic/Cos470/blob/master/Assignment0/Assignment.md): This assignment will NOT be graded, but do it.
     * Read: [List<T>](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.list-1)
 * 2019/09/05
-  * Lecture: [Managing Data]()
+  * Lecture: [Managing Data](https://github.com/blackboxlogic/Cos470/blob/master/Notes/2019-09-05.md)
   * For next class:
     * Read: [Dictionary<K, V>](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.dictionary-2)
   * Start:
-    * [Assignment 1](https://github.com/blackboxlogic/Cos470/blob/master/Assignment1/Assignment.md): Dollar words (due on 2019/09/12)
+    * [Assignment: Dollar words](https://github.com/blackboxlogic/Cos470/blob/master/Assignment1/DollarWords.md) (due on 2019/09/12)
 * 2019/09/05
-  * TBD
+  * Lecture: Web Requests
 
 ## Grading
 #### Assignments 60% of course
@@ -44,8 +44,8 @@ An overview of the c#.net, covering language details and applications that can b
   * 5% Respond to code review from classmates
   * 5% Consistent code style
   * 5% Organized code
-* Assignments whose first substantial submission is late will loose 10 points per class.
-* Improvements to your assignment responding to code review (even late ones) will gain back points originally lost for whatever was wrong.
+* Assignments whose first substantial submission is late will loose 10 points per class. @Blackboxlogic when submitting late work
+* Improvements to your assignment (even late ones) will gain back points originally lost for whatever was wrong. @Blackboxlogic when submitting fixes
 
 #### Tests 40% of course
 * Midterm
