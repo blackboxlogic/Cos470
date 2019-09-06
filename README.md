@@ -30,8 +30,11 @@ An overview of the c#.net, covering language details and applications that can b
     * Read: [Dictionary<K, V>](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.dictionary-2)
   * Start:
     * [Assignment: Dollar words](https://github.com/blackboxlogic/Cos470/blob/master/Assignment1/DollarWords.md) (due on 2019/09/12)
-* 2019/09/05
-  * Lecture: Web Requests
+* *2019/09/10*
+  * Lecture: [Delegates and Linq](https://github.com/blackboxlogic/Cos470/blob/master/Notes/2019-09-10.md)
+  * Continue working on assignment 1
+* 2019/09/10
+  * Lecture: ??
 
 ## Grading
 #### Assignments 60% of course
