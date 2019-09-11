@@ -34,7 +34,9 @@ An overview of the c#.net, covering language details and applications that can b
   * Lecture: [Delegates and Linq](https://github.com/blackboxlogic/Cos470/blob/master/Notes/2019-09-10.md)
   * Continue working on assignment 1
 * 2019/09/10
-  * Lecture: ??
+  * Lecture: [Web Calls, References, Tests](https://github.com/blackboxlogic/Cos470/blob/master/Notes/2019-09-12.md)
+  * Assignment 1 is Due
+  * Start: Assignment 2
 
 ## Grading
 #### Assignments 60% of course
