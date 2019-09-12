@@ -126,10 +126,5 @@ public
 			//OutputAggregateDataToConsole(words, dollarWords);
 			//Console.Read();
 		}
-
-		public void Almost(string[] words)
-		{
-			words.OrderByDescending(w => w.Length).First();
-		}
 	}
 }
