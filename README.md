@@ -29,14 +29,14 @@ An overview of the c#.net, covering language details and applications that can b
   * For next class:
     * Read: [Dictionary<K, V>](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.dictionary-2)
   * Start:
-    * [Assignment: Dollar words](https://github.com/blackboxlogic/Cos470/blob/master/Assignment1/DollarWords.md) (due on 2019/09/12)
+    * [Assignment 1: Dollar words](https://github.com/blackboxlogic/Cos470/blob/master/Assignment1/DollarWords.md) (due on 2019/09/12)
 * *2019/09/10*
   * Lecture: [Delegates and Linq](https://github.com/blackboxlogic/Cos470/blob/master/Notes/2019-09-10.md)
   * Continue working on assignment 1
 * 2019/09/10
   * Lecture: [Web Calls, References, Tests](https://github.com/blackboxlogic/Cos470/blob/master/Notes/2019-09-12.md)
   * Assignment 1 is Due
-  * Start: Assignment 2
+  * Start: [Assignment 2: Dollar Addresses](https://github.com/blackboxlogic/Cos470/blob/master/Assignment2/DollarAddresses.md)
 
 ## Grading
 #### Assignments 60% of course
