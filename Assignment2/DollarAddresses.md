@@ -36,3 +36,7 @@ Your goal is to output all street names in your home town (or some town in Maine
 * [An Example Query](https://gis.maine.gov/arcgis/rest/services/Location/Maine_E911_Addresses_Roads_PSAP/MapServer/1/query?where=MUNICIPALITY%3D%27Limestone%27&text=&objectIds=&time=&geometry=&geometryType=esriGeometryEnvelope&inSR=&spatialRel=esriSpatialRelIntersects&relationParam=&outFields=ADDRESS_NUMBER%2CSTREETNAME%2CSUFFIX%2CMUNICIPALITY%2CLatitude%2Clongitude&returnGeometry=false&returnTrueCurves=false&maxAllowableOffset=&geometryPrecision=&outSR=&returnIdsOnly=false&returnCountOnly=false&orderByFields=address_number&groupByFieldsForStatistics=&outStatistics=&returnZ=false&returnM=false&gdbVersion=&returnDistinctValues=false&resultOffset=0&resultRecordCount=&f=html)
 * Change "Format" from "HTML" to "JSON" to get just the data.
 * Note: this is a government API, be nice to it.
+  * Something I didn't tell you: The API only return a maximum of 5000 records per request. You could make more requests and set the 'resultOffset' value to get the *next* 5000 records but I'm afraid of what a mis-coded loop could do. Just work with the first 5000 results that you get from the first call.
+
+## Hints
+* I've added demonstrations of these ideas in my notes folder.
