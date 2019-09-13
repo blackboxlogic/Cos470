@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace ConsoleApp2
+namespace demo
 {
 	public static class FluentInts
 	{
