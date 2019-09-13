@@ -18,11 +18,12 @@ namespace demo
 		//static char LetterThanOccursMostInASingleName(string[] names)
 		public static string[] Names = new[] { "Alex", "Josh", "Daniel", "Miguel", "Nick", "Jesse", "Shea", "Lincoln", "Jon", "Manda", "Dennis", "Zachary", "Bobby", "Luke", "Fazil", "Jennifer", "Dejan" };
 
-		public static void DoStuff(IEnumerable<int> data)
+		public static void DoStuff()
 		{
+			var data = new[] { 15, 0, 1, 2, 4, 7, 6, 3, 5, 90, 200, 15 };
 			// notData is not data! it is a process for getting data
 			IEnumerable<cat> notData = data.Distinct()
-				.TakeLast(5)
+				.Take(5)
 				.OrderBy(x => x)
 				.Where(x => x % 3 == 0)
 				.Select(a => new cat(a));

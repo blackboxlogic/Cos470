@@ -6,7 +6,7 @@ namespace demo
 {
 	class WebRequestDemo
 	{
-		public string DoSomething()
+		public static string DoStuff()
 		{
 			// Using HttpUtility to generate the parameters for the query string handles HTTP escaping the values.
 			var query = HttpUtility.ParseQueryString(string.Empty);

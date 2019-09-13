@@ -1,11 +1,11 @@
-using Newtonsoft.Json
+using Newtonsoft.Json;
 
 namespace demo
 {
 	class JsonDemo
 	{
 		// Requires nuget package reference: Newtonsoft.Json
-		public static void doStuff()
+		public static void DoStuff()
 		{
 			// This string is easier to work with and understand using something to format it for you, like the JSTools plugin for Notepad++.
 			string json = @"{""name"":""SuperZOO!"",""animals"":[{""name"":""cat"",""age"":2},{""name"":""dog"",""age"":4}]}";
