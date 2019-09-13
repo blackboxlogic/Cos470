@@ -16,7 +16,11 @@ An overview of the c#.net, covering language details and applications that can b
 * Access to a computer with:
   * Visual Studio
 * A githib.com account
-* more TBD
+* Suggestions:
+  * [Notepad++](https://notepad-plus-plus.org/download/) is a versatile text editor.
+    * JSTools helps with JSON formatting. Plugins -> Plugins Admin -> search JSTools)
+  * [Postman](https://www.getpostman.com/downloads/) helps design web requests.
+  * A Git client (visual studio works for simple things)
 
 ## Course Schedule
 * 2019/09/03
@@ -30,14 +34,19 @@ An overview of the c#.net, covering language details and applications that can b
     * Read: [Dictionary<K, V>](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.dictionary-2)
   * Start:
     * [Assignment 1: Dollar words](https://github.com/blackboxlogic/Cos470/blob/master/Assignment1/DollarWords.md) (due on 2019/09/12)
-* *2019/09/10*
+* 2019/09/10
   * Lecture: [Delegates and Linq](https://github.com/blackboxlogic/Cos470/blob/master/Notes/2019-09-10.md)
   * Continue working on assignment 1
-* 2019/09/10
+* 2019/09/12
   * Lecture: [Web Calls, References, Tests](https://github.com/blackboxlogic/Cos470/blob/master/Notes/2019-09-12.md)
   * Assignment 1 is Due
   * Start: [Assignment 2: Dollar Addresses](https://github.com/blackboxlogic/Cos470/blob/master/Assignment2/DollarAddresses.md)
-
+* **2019/09/17**
+  * Lecture: [Git, review, and assignment2](https://github.com/blackboxlogic/Cos470/blob/master/Notes/2019-09-17.md)
+* 2019/09/19
+* 2019/09/24
+  * Assignment 2 is Due
+  
 ## Grading
 #### Assignments 60% of course
 * 65% Does your project functionally meet the goals

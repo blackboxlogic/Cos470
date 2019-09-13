@@ -1,5 +1,5 @@
 # Assignment 2 "Dollar Addresses"
-Due Thursday 2019-09-19
+Due Tuesday 2019-09-24
 
 ## Assignment Goals
 * Student creates project that makes web calls, deserializes the response (xml or json), analyzes the data and outputs some result.
