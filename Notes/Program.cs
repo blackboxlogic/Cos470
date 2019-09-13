@@ -1,10 +1,11 @@
 ﻿using System;
+using System.Linq;
 
 namespace demo
 {
-	class Program
+	public class Program
 	{
-		static void Main(string[] args)
+		public static void Main(string[] args)
 		{
 			FluentInts.DoStuff();
 			LinqDemo.DoStuff();
@@ -13,6 +14,12 @@ namespace demo
 			WebRequestDemo.DoStuff();
 
 			Console.WriteLine("Hello World!");
+		}
+
+		// Must be public to be seen from the unit test project.
+		public static int CountAs(string input)
+		{
+			return input.Count(a => a == 'a' || a == 'A');
 		}
 	}
 }
