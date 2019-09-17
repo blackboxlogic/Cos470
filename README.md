@@ -46,7 +46,8 @@ An overview of the c#.net, covering language details and applications that can b
 * 2019/09/19
 * 2019/09/24
   * Assignment 2 is Due
-  
+* 2019/09/19
+  * ?? 
 ## Grading
 #### Assignments 60% of course
 * 80% Does your project functionally meet the goals
