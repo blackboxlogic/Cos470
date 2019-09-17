@@ -49,15 +49,19 @@ An overview of the c#.net, covering language details and applications that can b
   
 ## Grading
 #### Assignments 60% of course
-* 65% Does your project functionally meet the goals
-* 35% Use of an organized process
+* 80% Does your project functionally meet the goals
+  * 50% Output is as expected
+  * 5% Code is simple
+  * 5% Code is well organized
+  * 5% Code is styled consistently
+  * 5% Program covers reasonable corner cases
+  * 5% Exception handling when necessary
+  * 5% Algorithm is efficient (uses resources responsibly)
+* 20% Use of an organized process
   * 5% Code is in GitHub
-  * 5% Commits are well sized and commented
-  * 5% Assignments are separate branches or repos
-  * 5% Provide code review to classmates
-  * 5% Respond to code review from classmates
-  * 5% Consistent code style
-  * 5% Organized code
+  * 5% Assignments are separate branches or repos (when assigned)
+  * 5% Provide code review to classmates (when assigned)
+  * 5% Respond to code review
 * Assignments whose first substantial submission is late will loose 10 points per class. @Blackboxlogic when submitting late work
 * Improvements to your assignment (even late ones) will gain back points originally lost for whatever was wrong. @Blackboxlogic when submitting fixes
 
