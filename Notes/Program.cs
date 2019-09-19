@@ -7,13 +7,9 @@ namespace demo
 	{
 		public static void Main(string[] args)
 		{
-			FluentInts.DoStuff();
-			LinqDemo.DoStuff();
-			ConfigDemo.DoStuff();
-			JsonDemo.DoStuff();
-			WebRequestDemo.DoStuff();
+			
 
-			Console.WriteLine("Hello World!");
+			Console.ReadKey();
 		}
 
 		// Must be public to be seen from the unit test project.

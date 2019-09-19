@@ -9,9 +9,9 @@ namespace demo
 		public static string DoStuff()
 		{
 			// Using HttpUtility to generate the parameters for the query string handles HTTP escaping the values.
+			// Change these:
 			var query = HttpUtility.ParseQueryString(string.Empty);
 			query["id"] = 20949324.ToString();
-
 			var address = @"https://news.ycombinator.com/item?" + query;
 
 			// Disposing HttpClient is not best practice. It's good enough and I'm keeping this simple.
