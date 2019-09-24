@@ -10,9 +10,15 @@ namespace demo
 		{
 			// Using HttpUtility to generate the parameters for the query string handles HTTP escaping the values.
 			// Change these:
-			var query = HttpUtility.ParseQueryString(string.Empty);
-			query["id"] = 20949324.ToString();
-			var address = @"https://news.ycombinator.com/item?" + query;
+			var parameters = HttpUtility.ParseQueryString(string.Empty);
+			parameters["where"] = "MUNICIPALITY='Limestone'";
+			parameters["outFields"] = "ADDRESS_NUMBER,STREETNAME,SUFFIX,MUNICIPALITY,Latitude,longitude";
+			parameters["f"] = "pjson";
+			parameters["resultRecordCount"] = "10";
+
+			//
+			var address = @"https://gis.maine.gov/arcgis/rest/services/Location/Maine_E911_Addresses_Roads_PSAP/MapServer/1/query?"
+				+ parameters;
 
 			// Disposing HttpClient is not best practice. It's good enough and I'm keeping this simple.
 			using (var client = new HttpClient())

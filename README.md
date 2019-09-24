@@ -44,9 +44,13 @@ An overview of the c#.net, covering language details and applications that can b
 * **2019/09/17**
   * Lecture: [Git, review, and assignment2](https://github.com/blackboxlogic/Cos470/blob/master/Notes/2019-09-17.md)
 * 2019/09/19
+  * Lecture: [Object Oriented Stuff](https://github.com/blackboxlogic/Cos470/blob/master/Notes/2019-09-19.md)
 * 2019/09/24
+  * Lecture: [??](https://github.com/blackboxlogic/Cos470/blob/master/Notes/2019-09-24.md)
   * Assignment 2 is Due
-* 2019/09/19
+  * Read for next class: [code review](https://mtlynch.io/human-code-reviews-1/)
+* 2019/09/26
+  * ?? 
   * ?? 
 ## Grading
 #### Assignments 60% of course

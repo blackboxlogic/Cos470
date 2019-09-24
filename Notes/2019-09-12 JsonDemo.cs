@@ -10,7 +10,7 @@ namespace demo
 			// This string is easier to work with and understand using something to format it for you, like the JSTools plugin for Notepad++.
 			string json = @"{""name"":""SuperZOO!"",""animals"":[{""name"":""cat"",""age"":2},{""name"":""dog"",""age"":4}]}";
 			var model = JsonConvert.DeserializeObject<zoo>(json);
-			json = JsonConvert.SerializeObject(model);
+			//json = JsonConvert.SerializeObject(model);
 		}
 
 		//Create class(es) to represent the data model

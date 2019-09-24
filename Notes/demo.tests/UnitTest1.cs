@@ -19,6 +19,7 @@ namespace Tests
 		{
 			// This test will run once
 			Assert.IsTrue(1 == 1);
+			Assert.IsTrue(2 == 2);
 		}
 
 		[TestCase("a", ExpectedResult = 1)]
