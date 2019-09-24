@@ -51,7 +51,8 @@ An overview of the c#.net, covering language details and applications that can b
   * Read for next class: [code review](https://mtlynch.io/human-code-reviews-1/)
 * 2019/09/26
   * ?? 
-  * ?? 
+* 2019/12/17:
+  * FINAL EXAM 4:15-6:15pm
 ## Grading
 #### Assignments 60% of course
 * 80% Does your project functionally meet the goals
