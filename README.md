@@ -48,13 +48,17 @@ An overview of the c#.net, covering language details and applications that can b
 * 2019/09/24
   * Lecture: [Regex and Threading](https://github.com/blackboxlogic/Cos470/blob/master/Notes/2019-09-24.md)
   * Assignment 2 is Due
-  * Read for next class: [code review](https://mtlynch.io/human-code-reviews-1/)
 * 2019/09/26
-  * Lecture: Introducing Assignment3, and [Web stuff](https://github.com/blackboxlogic/Cos470/blob/master/Notes/2019-09-24.md)
-  * Start: Assignment 3
+  * Lecture:
+    * Introducing Assignment3
+    * [Web stuff](https://github.com/blackboxlogic/Cos470/blob/master/Notes/2019-09-24.md)
+  * Start:
+    * [Assignment 3](https://github.com/blackboxlogic/Cos470/blob/master/Assignment3/HaveWeMet.md)
+    * [code review stuff](https://github.com/features/code-review/)
+    * [code review things](https://mtlynch.io/human-code-reviews-1/)
 * 2019/10/01
 * 2019/10/03
-  * Due: Assignment 3
+  * Due: Assignment 3, code review reading
 * 2019/12/17:
   * FINAL EXAM 4:15-6:15pm
 ## Grading
