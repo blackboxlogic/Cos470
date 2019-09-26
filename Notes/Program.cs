@@ -1,74 +1,63 @@
 ﻿using Newtonsoft.Json;
 using System;
+using System.Collections.Concurrent;
+using System.Collections.Generic;
 using System.Linq;
+using System.Threading;
+using System.Threading.Tasks;
 
 namespace demo
 {
 	public class Program
 	{
+		//private readonly static object lockObject = new object();
+
+		private static ConcurrentDictionary<int, int> ThreadSafeData = new ConcurrentDictionary<int, int>();
+
 		public static void Main(string[] args)
 		{
-			dynamic tom = new Carrot();
 
-			tom.Grow();
-			tom.Fry();
+			Dictionary<int, int> basicDictionary = new Dictionary<int, int>();
+			//ThreadSafeData.AddOrUpdate
 
+
+			Console.WriteLine("starting");
+			Task.Run(Tick);
+			Task.Run(Tock);
+			Console.WriteLine("started");
 
 			Console.ReadKey();
+		}
+
+		public static void Tick()
+		{
+			while (true)
+			{
+					Console.WriteLine("tick");
+					for (int i = 0; i < 20; i++)
+						Console.Write(i);
+					Console.WriteLine();
+				Thread.Sleep(110);
+			}
+		}
+
+		public static void Tock()
+		{
+			while (true)
+			{
+					Console.WriteLine("tock");
+					for (int i = 20; i > 0; i--)
+						Console.Write(i);
+
+					Console.WriteLine();
+				Thread.Sleep(130);
+			}
 		}
 
 		// Must be public to be seen from the unit test project.
 		public static int CountAs(string input)
 		{
 			return input.Count(a => a == 'a' || a == 'A');
-		}
-	}
-
-	public abstract class Plant // can have implementation
-	{
-		public virtual void Grow() // virtual means CAN be overriden
-		{
-			Console.WriteLine("wiggle wiggle wiggle");
-		}
-
-		public abstract void Ripen(); // abstract means MUST be overriden
-	}
-
-	public interface IEdible // Promise some behavior
-	{
-		void BeEaten(); // Anything in an interface, must be implemented
-	}
-
-	public interface IPlantable // Promise some behavior
-	{
-		void BePlanted();
-	}
-
-	public sealed class Carrot : Plant, IEdible, IPlantable
-	{
-		public void BeEaten()
-		{
-			Console.WriteLine("crunch");
-		}
-
-		public void BePlanted()
-		{
-			Console.WriteLine("plop");
-		}
-
-		public override string ToString()
-		{
-			return "Hello! I am a: " + base.ToString();
-		}
-
-		public override void Grow()
-		{
-			Console.WriteLine("waggle waggle waggle");
-		}
-
-		public override void Ripen()
-		{
-			
 		}
 	}
 }
