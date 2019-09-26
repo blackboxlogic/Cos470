@@ -9,7 +9,7 @@ Due: 2019/10/03
 
 ### Directions
 * Create and checkout a new branch "Assignment3" (to hold all work for this assignment)
-* Create a `.Net Core Class Library` (to hold all "business logic")
+* Create a `.Net Standard Class Library` (to hold all "business logic")
   * Add classes to define a data model which is compatible with the sample JSON (lat, lon, time, other stuff?).
   * DO NOT add a data-layer or data-source (no way to load actual data, all data and options will be passed into your library)
   * Implement these two features:
