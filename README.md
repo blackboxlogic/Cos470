@@ -1,6 +1,6 @@
 # Syllabus: COS 470 "Topic with c#"
 ## Description
-An overview of the c#.net, covering language details and applications that can be build with it. We'll incorporate tools/process commonly used in software development.
+An overview of the c#.Net, covering language details and applications that can be build with it. We'll incorporate tools/process commonly used in software development.
 
 ## Details
 * Class Times: Tuesday/Thursday 4:10pm to 5:25pm
@@ -41,7 +41,7 @@ An overview of the c#.net, covering language details and applications that can b
   * Lecture: [Web Calls, References, Tests](https://github.com/blackboxlogic/Cos470/blob/master/Notes/2019-09-12.md)
   * Assignment 1 is Due
   * Start: [Assignment 2: Dollar Addresses](https://github.com/blackboxlogic/Cos470/blob/master/Assignment2/DollarAddresses.md)
-* **2019/09/17**
+* 2019/09/17
   * Lecture: [Git, review, and assignment2](https://github.com/blackboxlogic/Cos470/blob/master/Notes/2019-09-17.md)
 * 2019/09/19
   * Lecture: [Object Oriented Stuff](https://github.com/blackboxlogic/Cos470/blob/master/Notes/2019-09-19.md)
@@ -56,11 +56,16 @@ An overview of the c#.net, covering language details and applications that can b
     * [Assignment 3](https://github.com/blackboxlogic/Cos470/blob/master/Assignment3/HaveWeMet.md)
     * [code review stuff](https://github.com/features/code-review/)
     * [code review things](https://mtlynch.io/human-code-reviews-1/)
-* 2019/10/01
+* **2019/10/01**
+  * Lecture:
+    * [MORE API THINGS](https://github.com/blackboxlogic/Cos470/blob/master/Notes/2019-10-01.md)
 * 2019/10/03
-  * Due: Assignment 3, code review reading
+  * Due: Assignment 3
+  * Due: Assigned reading for Code review
+* ...
 * 2019/12/17:
   * FINAL EXAM 4:15-6:15pm
+
 ## Grading
 #### Assignments 60% of course
 * 80% Does your project functionally meet the goals
