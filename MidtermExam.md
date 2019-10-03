@@ -13,3 +13,5 @@
 * Write a lambda expression
 * Write a linq statement
 * Write a simple program
+* Is GitHub working ok for accessing course documents
+* Is github working ok for submitting your coursework
