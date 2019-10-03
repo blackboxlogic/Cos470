@@ -53,15 +53,16 @@ An overview of the c#.Net, covering language details and applications that can b
     * Introducing Assignment3
     * [Web stuff](https://github.com/blackboxlogic/Cos470/blob/master/Notes/2019-09-24.md)
   * Start:
-    * [Assignment 3](https://github.com/blackboxlogic/Cos470/blob/master/Assignment3/HaveWeMet.md)
+    * [Assignment 3](https://github.com/blackboxlogic/Cos470/blob/master/Assignment3/HaveWeMetLibrary.md)
     * [code review stuff](https://github.com/features/code-review/)
     * [code review things](https://mtlynch.io/human-code-reviews-1/)
 * **2019/10/01**
   * Lecture:
     * [MORE API THINGS](https://github.com/blackboxlogic/Cos470/blob/master/Notes/2019-10-01.md)
 * 2019/10/03
-  * Due: Assignment 3
-  * Due: Assigned reading for Code review
+  * Lecture: [??](https://github.com/blackboxlogic/Cos470/blob/master/Notes/2019-10-03.md)
+  * Due: Assignment 3 part 1
+  * Start: (Assignment 3 part 2)[https://github.com/blackboxlogic/Cos470/blob/master/Assignment3/HaveWeMetReview.md]
 * ...
 * 2019/12/17:
   * FINAL EXAM 4:15-6:15pm

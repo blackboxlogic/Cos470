@@ -1,5 +1,5 @@
 # Have we met? (part 1)
-Assigned: 2019
+Assigned: 2019/09/26
 Due: 2019/10/03
 
 ### Context
