@@ -13,8 +13,10 @@ Due: 2019/10/08
 * Find the Email from Alex pairing you with someone else.
   * Didn't get an email or you their project isn't done... I don't know, email Alex about it.
 * Add the other person's github account as a contributor on your repo.
+  * account is found in their github url.
+  * go to settings, collaborators to add them.
 * Accept the "invitation" to be a contributor on their repo. (you'll get this by email)
-* Find their Assignment 3 pull request.
+* Find their Assignment 3 pull request. Find `Files Changed`
 * Comment on their pull request:
   * Things they did well
   * Things which might produce undesirable functionality
