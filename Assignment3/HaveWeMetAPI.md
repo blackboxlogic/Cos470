@@ -3,6 +3,7 @@ Assigned: ?
 Due: ?
 
 ## Assignment Goals
+* Use C#
 * Student creates any API that accepts requests containing data, does some analysis, and responds with a result.
 * Code must be well organized (Business logic should be in a separate library).
 * Responses should use appropriate HTTP response codes.

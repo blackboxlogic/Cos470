@@ -59,10 +59,15 @@ An overview of the c#.Net, covering language details and applications that can b
 * 2019/10/01
   * Lecture:
     * [MORE API THINGS](https://github.com/blackboxlogic/Cos470/blob/master/Notes/2019-10-01.md)
-* **2019/10/03**
-  * Lecture: [??](https://github.com/blackboxlogic/Cos470/blob/master/Notes/2019-10-03.md)
+* 2019/10/03
+  * Lecture: [More API stuff](https://github.com/blackboxlogic/Cos470/blob/master/Notes/2019-10-03.md)
   * Due: Assignment 3 part 1
   * Start: (Assignment 3 part 2)[https://github.com/blackboxlogic/Cos470/blob/master/Assignment3/HaveWeMetReview.md]
+* **2019/10/08**
+  * Lecture: [Starting Web Stuff](https://github.com/blackboxlogic/Cos470/blob/master/Notes/2019-10-08.md)
+  * Due: Assignment 3 part 1
+  * Start: (Assignment 3 part 2)[https://github.com/blackboxlogic/Cos470/blob/master/Assignment3/HaveWeMetReview.md]
+
 * ...
 * 2019/12/17:
   * FINAL EXAM 4:15-6:15pm
