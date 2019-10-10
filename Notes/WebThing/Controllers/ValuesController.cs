@@ -12,11 +12,20 @@ namespace WebThing.Controllers
 	{
 		static Dictionary<int, string> DataLayer = new Dictionary<int, string>();
 
+		public ValuesController()
+		{
+			DataLayer[0] = "Tigger";
+			DataLayer[1] = "cat a";
+			DataLayer[2] = "cat b";
+			DataLayer[3] = "shaddow";
+			DataLayer[4] = "big kevin";
+		}
+
 		// GET api/values
 		[HttpGet]
-		public ActionResult<IEnumerable<string>> Get()
+		public ActionResult<Dictionary<int,string>> Get()
 		{
-			return DataLayer.Select(kvp => kvp.Key + "-" + kvp.Value).ToArray();
+			return DataLayer;
 		}
 
 		// GET api/values/5
@@ -41,10 +50,11 @@ namespace WebThing.Controllers
 
 		// POST api/values
 		[HttpPost]
-		public void Post([FromBody] string value)
+		public ActionResult<int> Post([FromBody] string value)
 		{
 			int max = DataLayer.Keys.DefaultIfEmpty().Max() + 1;
 			DataLayer[max] = value;
+			return max;
 		}
 
 		// PUT api/values/5

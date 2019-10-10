@@ -1,8 +1,38 @@
-﻿@{
+﻿@model Cats
+@{
     ViewData["Title"] = "Home Page";
 }
 
 <div class="text-center">
     <h1 class="display-4">Welcome TO A StOrE</h1>
     <p>Buy the thINgs</p>
+
+
+    @{ foreach (var catName in Model.IdToName)
+        {
+            <p>@catName</p>
+        }
+    }
+
+    <input type="text" id="catField" />
+    <button onclick="submit()"> add a cat</button>
+
+<script>
+    function submit()
+    {
+        
+
+$.ajax({
+    type: "Post", //HTTP VERB
+    url: "/home/NewCat", //URL
+    //dataType: 'json', //What type of response you expect back from the server
+    contentType: 'text/plain', //What type of data you are trying to send
+    data: document.getElementById('catField').value,
+    success: (x) => alert(x)
+})
+
+
+    }
+
+</script>
 </div>

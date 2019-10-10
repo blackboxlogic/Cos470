@@ -5,6 +5,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using WebPage______.Models;
+using WebPage______.DataLayer;
 
 namespace WebPage______.Controllers
 {
@@ -12,7 +13,16 @@ namespace WebPage______.Controllers
 	{
 		public IActionResult Index()
 		{
-			return View();
+			var apiResult = Vet.GetTheCats();
+
+			return View(apiResult);
+		}
+
+		[HttpPost]
+		public ActionResult<int> NewCat([FromBody] string catName)
+		{
+			var id = Vet.AddNewCat(catName);
+			return new ActionResult<int>(id);
 		}
 
 		public IActionResult Privacy()
