@@ -31,6 +31,7 @@ Due: 2019/10/03
 * [Your google location data](https://takeout.google.com/settings/takeout/custom/location_history?hl=en&gl=US&expflags)
 * [Google Location schema](https://gifguide2code.com/2018/02/12/json-how-to-read-your-google-location-data/)
 * [Your Facebook Location data](https://www.facebook.com/help/212802592074644)
+* [Your Twitter Data](https://twitter.com/settings/your_twitter_data) last 60 days in personalization.js
 * [Your Apple location data](https://www.apple.com/newsroom/2011/04/27Apple-Q-A-on-Location-Data/)
 * [Distances on circles](https://stackoverflow.com/questions/1253499/simple-calculations-for-working-with-lat-lon-and-km-distance)
 * [Working with Unix Time](https://stackoverflow.com/questions/17632584/how-to-get-the-unix-timestamp-in-c-sharp)

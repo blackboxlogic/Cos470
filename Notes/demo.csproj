@@ -7,8 +7,14 @@
 
   <ItemGroup>
     <Compile Remove="demo.tests\**" />
+    <Compile Remove="WebPage!!!!!!\**" />
+    <Compile Remove="WebThing\**" />
     <EmbeddedResource Remove="demo.tests\**" />
+    <EmbeddedResource Remove="WebPage!!!!!!\**" />
+    <EmbeddedResource Remove="WebThing\**" />
     <None Remove="demo.tests\**" />
+    <None Remove="WebPage!!!!!!\**" />
+    <None Remove="WebThing\**" />
   </ItemGroup>
 
   <ItemGroup>

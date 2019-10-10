@@ -26,6 +26,7 @@ Due Thursday 2019-09-05
    1. What you want to get out of this class
    1. Learning style
    1. Anything else you'd like me to know
+   1. What other classes are you taking this semester
 1. Commit this file, and push it to github
 
 ## Reading:
