@@ -20,8 +20,14 @@ namespace demo
 
 		public static void DoStuff()
 		{
-			var data = new[] { 15, 0, 1, 2, 4, 7, 6, 3, 5, 90, 200, 15 };
+			int[] data = new[] { 15, 0, 1, 2, 4, 7, 6, 3, 5, 90, 200, 15 };
 			// notData is not data! it is a process for getting data
+
+			// Loop a theta from 0 to 360 step size .36
+				// Calculate x and y
+				// Claculate Red
+				// Draw a triangle
+
 			IEnumerable<cat> notData = data.Distinct()
 				.Take(5)
 				.OrderBy(x => x)

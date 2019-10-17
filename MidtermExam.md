@@ -1,17 +1,162 @@
-* Identify if a variable is a reference type of value type
-* Choose a collection type to represent a dataset
-* Design a class from json text
-* Identify parts of a Uri
-* What to do with IDisposable
-* Know what project references are for
-* know what nuget packages are for
-* Code review
-  * Recommend improvements to a code sample
-* CRUD (get/put/post/delete)
-  * Get is Idempotent
-* HTTP response codes
-* Write a lambda expression
-* Write a linq statement
-* Write a simple program
-* Is GitHub working ok for accessing course documents
-* Is github working ok for submitting your coursework
+# Midterm Exam 2019/10/24
+If you think the answer is different than you think I think it is, just make a note why you think I think you're wrong and why you think you think you're right.
+
+## Identify if these `Type`s are *reference* types or *value* types (circle R or V):
+  * int			R	V
+  * string		R	V
+  * bool		R	V
+  * Cat			R	V
+  * Dictionary<int>	R	V
+  
+### In one English sentence for each, what do these `linq` statements do?
+```c#
+var age = students.OrderByDescending(s => s.Grade).Take(5).Min(s => s.Age);
+```
+
+
+```c#
+var gender = students.GroupBy(s => s.Gender).OrderByDescending(g => g.Average(s => s.Grade)).First().Key;
+```
+
+
+### Design c# classes to form a *data model* from this json:
+```json
+{
+    "inventory": [
+        {
+            "name": "Ground Black Pepper",
+            "safetyDataSheet": "http://archpdfs.lps.org/Chemicals/Black_pepper.pdf",
+            "LD50mgPerKg": null
+            "hazards": [
+                {
+                    "condition": "eyes",
+                    "response": "rinse immediately"
+                }, {
+                    "condition": "spilled",
+                    "response": "vacuum or sweep"
+                },
+            ]
+        }, {
+            "name": "Vinegar",
+            "safetyDataSheet": "http://archpdfs.lps.org/Chemicals/Vinegar.pdf",
+            "LD50mgPerKg": 3310
+            "hazards": [
+                {
+                    "condition": "ingested",
+                    "response": "Do not give baking soda"
+                }
+            ]
+        }
+    ]
+}
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+### Identify the parts of this URL
+assuming that the webserver is configured in the conventional way
+* Circle each individual *parameter* key-value pair
+* Draw a Box around the *domain* (including the sub-domain and top-level domain)
+* ~~Strike through~~ the path to the *controller* (including the controller)
+* Underline the *action*
+* Draw a cat sitting on top of the *protocol*
+
+
+```
+https://bb.courses.maine.edu/webapps/blackboard/execute/modulepage/view?course_id=_119158_1&cmp_tab_id=_260715_1&editMode=true&mode=cpview
+```
+
+
+### If you are instantiating something which implements the *IDisposable* interface, you should probably wrap it in a __________________ statement.
+
+### Draw lines connection the HTTP response code to the meaning
+* 2xx		The client messed up
+* 4xx		Everything is Fine
+* 5xx		The server messed up
+
+### Code Review
+Study this code sample from "your coworker" (line numbers are on the left):
+```c#
+public static class Math
+{
+0	private static double standardDeviation
+1	public static double CalculateStandardDeviation(int[] values)
+2	{
+3		var x = 0;
+4		int y = 0;
+5
+6		for (int i = 0; i < values.Length; i++)
+7		{
+8			x = x + values[i];
+9		}
+10
+11		var sum = x / values.length;
+12		x = 0;
+13
+14		foreach (var value in values))
+15		{
+16			x = x + (int)Math.Abs(value - sum);
+17		}
+18
+19		standardDeviation = x / values.length;
+20		Console.WriteLine("The standard deviation is: " + standardDeviation);
+21
+22		return standardDeviation;
+23	}
+}
+```
+* Given the above code sample, for each of these problems: write the line number(s) where the problem occurs, what is wrong about it and suggest how they can improve it.
+  * things poorly named
+  * variable scope is too big/small
+  * unused variable
+  * integer division
+  * division by 0
+  * manual re-implementation of functionality which is in the system libraries
+  * "magic" (hard-coded) numbers or strings
+  * inconsistent code style
+  * User Interface code mixed with the Business Logic
+  * using the wrong type
+  * casting to try to fix the problem caused by using the wrong type
+  * "tricky" code without a unit test
+
+
+
+
+
+
+### Gramma
+Gramma just sent me this email. Please compose a short response using at least these words:
+[Web browser, request, parameters, URL, network, server, model, view, controller, response, headers, body]
+```
+From: Ruth ****** <******@gmail.com>
+Subject: Re: Checking In
+To: Alex Hennings <alex.hennings@maine.edu>
+Content-Type: text/plain; charset="UTF-8"
+
+Grandson Alex:  Thanks for your reply and info re preferred mailing address - duly noted (look for mail from me).
+
+Re "building Web Sites", can you explain in terminology I may understand what is a website and how does it work?
+
+Am glad the teaching is working out for YOU - continue to be pondering new material; your students are depending on YOU!!   Hugs, Gma
+```
