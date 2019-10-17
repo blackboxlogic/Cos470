@@ -26,7 +26,7 @@ var gender = students.GroupBy(s => s.Gender).OrderByDescending(g => g.Average(s 
         {
             "name": "Ground Black Pepper",
             "safetyDataSheet": "http://archpdfs.lps.org/Chemicals/Black_pepper.pdf",
-            "LD50mgPerKg": null
+            "LD50mgPerKg": null,
             "hazards": [
                 {
                     "condition": "eyes",
@@ -39,7 +39,7 @@ var gender = students.GroupBy(s => s.Gender).OrderByDescending(g => g.Average(s 
         }, {
             "name": "Vinegar",
             "safetyDataSheet": "http://archpdfs.lps.org/Chemicals/Vinegar.pdf",
-            "LD50mgPerKg": 3310
+            "LD50mgPerKg": 3310,
             "hazards": [
                 {
                     "condition": "ingested",
