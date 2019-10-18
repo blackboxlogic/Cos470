@@ -1,15 +1,19 @@
 # Midterm Exam 2019/10/24
+The midterm exam will be held in class on Thursday 2019/10/24. You will not be allowed to use any reference while taking the exam. Bring a pen. You can leave class when you're done.
+
 If you think the answer is different than you think I think it is, make a note why you think I think you're wrong and why you think you think you're right.
 
-## Identify if these `Type`s are *Reference* types or *Value* types (write R or V):
+### Reference vs Value types 
+Write an R or V to indicate if these `Type`s are *Reference* types or *Value* types :
   * int
   * int[]
   * string
   * bool
   * Cat
   * Dictionary<int>
-  
-### Write one English sentence for each, what do these `linq` statements do?
+
+### Linq
+Write one English sentence for each, what do these `linq` statements do?
 ```c#
 students.Count(s => s.Grade > 70);
 ```
@@ -30,7 +34,8 @@ students.GroupBy(s => s.Gender).OrderByDescending(g => g.Average(s => s.Grade)).
 ```
 
 
-### Design c# classes to form a *data model* which fits the structure of this json:
+### Classes from JSON
+Design c# classes to form a *data model* which fits the structure of this json:
 Reminder: This is what a class looks like:
 ```c#
 public class Cat
@@ -117,7 +122,8 @@ https://bb.courses.maine.edu/webapps/blackboard/execute/modulepage/view?course_i
 ```
 
 
-### If you are instantiating something which implements the `IDisposable` interface, you should probably wrap it in a __________________ statement to make sure that it gets ______________ when you're done with it.
+### IDisposable
+If you are instantiating something which implements the `IDisposable` interface, you should probably wrap it in a __________________ statement to make sure that it gets ______________ when you're done with it.
 
 ### Draw lines connection the HTTP response code to the basic meaning
 ```
