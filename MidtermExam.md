@@ -1,13 +1,13 @@
 # Midterm Exam 2019/10/24
 If you think the answer is different than you think I think it is, make a note why you think I think you're wrong and why you think you think you're right.
 
-## Identify if these `Type`s are *Reference* types or *Value* types (circle R or V):
-  * int				R	V
-  * int[]			R	V
-  * string			R	V
-  * bool			R	V
-  * Cat				R	V
-  * Dictionary<int>	R	V
+## Identify if these `Type`s are *Reference* types or *Value* types (write R or V):
+  * int
+  * int[]
+  * string
+  * bool
+  * Cat
+  * Dictionary<int>
   
 ### Write one English sentence for each, what do these `linq` statements do?
 ```c#
@@ -31,6 +31,15 @@ students.GroupBy(s => s.Gender).OrderByDescending(g => g.Average(s => s.Grade)).
 
 
 ### Design c# classes to form a *data model* which fits the structure of this json:
+Reminder: This is what a class looks like:
+```c#
+public class Cat
+{
+	public string Name;
+	public int AttackPoints;
+	public Dog[] Targets;
+}
+```
 ```json
 {
     "chemicals": [
@@ -60,39 +69,40 @@ students.GroupBy(s => s.Gender).OrderByDescending(g => g.Average(s => s.Grade)).
         }
     ]
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ```
-Reminder: This is what a class looks like:
-```c#
-public class Cat
-{
-	public string Name;
-	public int AttackPoints;
-	public Dog[] Targets;
-}
-```
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ### URL Parts
 Identify the parts of this URL. Assume that the webserver is configured in the conventional way
 * Circle each individual *parameter* key-value pair
@@ -107,7 +117,7 @@ https://bb.courses.maine.edu/webapps/blackboard/execute/modulepage/view?course_i
 ```
 
 
-### If you are instantiating something which implements the `IDisposable` interface, you should probably wrap it in a __________________ statement to make sure that it gets ___________.
+### If you are instantiating something which implements the `IDisposable` interface, you should probably wrap it in a __________________ statement to make sure that it gets ______________ when you're done with it.
 
 ### Draw lines connection the HTTP response code to the basic meaning
 ```
@@ -210,16 +220,25 @@ Grandson Alex:  Thanks for your reply and info re preferred mailing address - du
 Re "building Web Sites", can you explain in terminology I may understand what is a website and how does it work?
 
 Am glad the teaching is working out for YOU - continue to be pondering new material; your students are depending on YOU!!   Hugs, Gma
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ```
-
-
-
-
-
-
-
-
-
 
 ### Git
 Write a short description of what the `.gitignore` file is for and why someone would choose to use it.
