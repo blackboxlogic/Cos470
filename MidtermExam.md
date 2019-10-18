@@ -35,7 +35,8 @@ students.GroupBy(s => s.Gender).OrderByDescending(g => g.Average(s => s.Grade)).
 
 
 ### Classes from JSON
-Design c# classes to form a *data model* which fits the structure of this json:
+Design c# classes to form a *data model* which fits the structure of this json.
+
 Reminder: This is what a class looks like:
 ```c#
 public class Cat
@@ -109,7 +110,7 @@ public class Cat
 
 ```
 ### URL Parts
-Identify the parts of this URL. Assume that the webserver is configured in the conventional way
+Identify the parts of this URL. Assume that the webserver is configured in the conventional way.
 * Circle each individual *parameter* key-value pair
 * Draw a Box around the *domain* (including the sub-domain and top-level domain)
 * ~~Strike through~~ the path to the *controller* (including the controller)
@@ -125,7 +126,8 @@ https://bb.courses.maine.edu/webapps/blackboard/execute/modulepage/view?course_i
 ### IDisposable
 If you are instantiating something which implements the `IDisposable` interface, you should probably wrap it in a __________________ statement to make sure that it gets ______________ when you're done with it.
 
-### Draw lines connection the HTTP response code to the basic meaning
+### HTTP Response Codes
+Draw lines connection the HTTP response code to the basic meaning.
 ```
 2xx			The client messed up
 3xx			Everything is Fine
