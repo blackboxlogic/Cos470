@@ -1,32 +1,43 @@
 # Midterm Exam 2019/10/24
-If you think the answer is different than you think I think it is, just make a note why you think I think you're wrong and why you think you think you're right.
+If you think the answer is different than you think I think it is, make a note why you think I think you're wrong and why you think you think you're right.
 
-## Identify if these `Type`s are *reference* types or *value* types (circle R or V):
-  * int			R	V
-  * string		R	V
-  * bool		R	V
-  * Cat			R	V
+## Identify if these `Type`s are *Reference* types or *Value* types (circle R or V):
+  * int				R	V
+  * int[]			R	V
+  * string			R	V
+  * bool			R	V
+  * Cat				R	V
   * Dictionary<int>	R	V
   
-### In one English sentence for each, what do these `linq` statements do?
+### Write one English sentence for each, what do these `linq` statements do?
 ```c#
-var age = students.OrderByDescending(s => s.Grade).Take(5).Min(s => s.Age);
+students.Count(s => s.Grade > 70);
 ```
 
 
 ```c#
-var gender = students.GroupBy(s => s.Gender).OrderByDescending(g => g.Average(s => s.Grade)).First().Key;
+students.Select(s => s.Name).ToArray();
 ```
 
 
-### Design c# classes to form a *data model* from this json:
+```c#
+students.OrderByDescending(s => s.Grade).Take(5).Min(s => s.Age);
+```
+
+
+```c#
+students.GroupBy(s => s.Gender).OrderByDescending(g => g.Average(s => s.Grade)).First().Key;
+```
+
+
+### Design c# classes to form a *data model* which fits the structure of this json:
 ```json
 {
-    "inventory": [
+    "chemicals": [
         {
             "name": "Ground Black Pepper",
             "safetyDataSheet": "http://archpdfs.lps.org/Chemicals/Black_pepper.pdf",
-            "LD50mgPerKg": null,
+            "LD50": 200,
             "hazards": [
                 {
                     "condition": "eyes",
@@ -39,15 +50,24 @@ var gender = students.GroupBy(s => s.Gender).OrderByDescending(g => g.Average(s 
         }, {
             "name": "Vinegar",
             "safetyDataSheet": "http://archpdfs.lps.org/Chemicals/Vinegar.pdf",
-            "LD50mgPerKg": 3310,
+            "LD50": 3310,
             "hazards": [
                 {
                     "condition": "ingested",
-                    "response": "Do not give baking soda"
+                    "response": "do not give baking soda"
                 }
             ]
         }
     ]
+}
+```
+Reminder: This is what a class looks like:
+```c#
+public class Cat
+{
+	public string Name;
+	public int AttackPoints;
+	public Dog[] Targets;
 }
 ```
 
@@ -73,14 +93,13 @@ var gender = students.GroupBy(s => s.Gender).OrderByDescending(g => g.Average(s 
 
 
 
-
-### Identify the parts of this URL
-assuming that the webserver is configured in the conventional way
+### URL Parts
+Identify the parts of this URL. Assume that the webserver is configured in the conventional way
 * Circle each individual *parameter* key-value pair
 * Draw a Box around the *domain* (including the sub-domain and top-level domain)
 * ~~Strike through~~ the path to the *controller* (including the controller)
 * Underline the *action*
-* Draw a cat sitting on top of the *protocol*
+* Draw a happy cat sitting on top of the *protocol*
 
 
 ```
@@ -88,61 +107,93 @@ https://bb.courses.maine.edu/webapps/blackboard/execute/modulepage/view?course_i
 ```
 
 
-### If you are instantiating something which implements the *IDisposable* interface, you should probably wrap it in a __________________ statement.
+### If you are instantiating something which implements the `IDisposable` interface, you should probably wrap it in a __________________ statement to make sure that it gets ___________.
 
-### Draw lines connection the HTTP response code to the meaning
-* 2xx		The client messed up
-* 4xx		Everything is Fine
-* 5xx		The server messed up
+### Draw lines connection the HTTP response code to the basic meaning
+```
+2xx			The client messed up
+3xx			Everything is Fine
+4xx			Sure, but it's over there
+5xx			The server messed up
+```
 
 ### Code Review
 Study this code sample from "your coworker" (line numbers are on the left):
 ```c#
 public static class Math
 {
-0	private static double standardDeviation
+0	private static double standardDeviation;
 1	public static double CalculateStandardDeviation(int[] values)
 2	{
-3		var x = 0;
-4		int y = 0;
+3		var sum = 0;
+4		int total = 0;
 5
-6		for (int i = 0; i < values.Length; i++)
+6		for (int i = 0; i <= values.Length; i++)
 7		{
-8			x = x + values[i];
+8			sum = sum + values[i];
 9		}
 10
-11		var sum = x / values.length;
-12		x = 0;
-13
-14		foreach (var value in values))
-15		{
-16			x = x + (int)Math.Abs(value - sum);
-17		}
-18
-19		standardDeviation = x / values.length;
-20		Console.WriteLine("The standard deviation is: " + standardDeviation);
-21
-22		return standardDeviation;
-23	}
+11		var max = sum / values.length;
+12		// This is the deviation sum.
+13		int deviationSum = 0;
+14
+15		foreach (var value in values)
+16		{
+17			deviationSum = deviationSum + (int)Math.Abs(value - max);
+18		}
+19
+20		standardDeviation = deviationSum / values.length;
+21		Console.WriteLine("The standard deviation is: " + standardDeviation);
+22
+23		return standardDeviation;
+24	}
 }
 ```
-* Given the above code sample, for each of these problems: write the line number(s) where the problem occurs, what is wrong about it and suggest how they can improve it.
-  * things poorly named
-  * variable scope is too big/small
-  * unused variable
-  * integer division
-  * division by 0
-  * manual re-implementation of functionality which is in the system libraries
-  * "magic" (hard-coded) numbers or strings
-  * inconsistent code style
-  * User Interface code mixed with the Business Logic
-  * using the wrong type
-  * casting to try to fix the problem caused by using the wrong type
-  * "tricky" code without a unit test
+Given the above code sample, for each of these problems: write a line number where the problem occurs, why it is wrong and suggest how they can improve it.
+Hint: Yes, it has each of these issues. You only need to reference one example of the problem.
+* uninformative or misleading names
 
 
+* inappropriate scope
 
 
+* unused things
+
+
+* comments that don't add any value
+
+
+* integer division
+
+
+* division by 0
+
+
+* index out of bounds
+
+
+* manual re-implementation of functionality which is in the system libraries
+
+
+* "magic" (hard-coded) numbers or strings
+
+
+* inconsistent code style
+
+
+* User Interface code mixed with Business Logic code
+
+
+* using the wrong type
+
+
+* casting (to try to fix the problem caused by using the wrong type)
+
+
+* "tricky" code without a unit test
+
+
+* any other sins? (Extra credit, because maybe I missed something)
 
 
 ### Gramma
@@ -160,3 +211,20 @@ Re "building Web Sites", can you explain in terminology I may understand what is
 
 Am glad the teaching is working out for YOU - continue to be pondering new material; your students are depending on YOU!!   Hugs, Gma
 ```
+
+
+
+
+
+
+
+
+
+
+### Git
+Write a short description of what the `.gitignore` file is for and why someone would choose to use it.
+
+
+
+
+
