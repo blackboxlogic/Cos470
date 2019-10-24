@@ -68,10 +68,14 @@ An overview of the c#.Net, covering language details and applications that can b
   * Due: (Assignment 3 part 2)[https://github.com/blackboxlogic/Cos470/blob/master/Assignment3/HaveWeMetReview.md]
 * 2019/10/10
   * Lecture: [Make our website better](https://github.com/blackboxlogic/Cos470/blob/master/Notes/2019-10-10.md)
-* **2019/10/22**
+* 2019/10/22
   * Lecture: [MORE WEBSITES](https://github.com/blackboxlogic/Cos470/blob/master/Notes/2019-10-22.md)
 * 2019/10/24
   * [Midterm Exam](https://github.com/blackboxlogic/Cos470/blob/master/MidtermExam.md)
+  * Start: [Assignment 3 part 3](https://github.com/blackboxlogic/Cos470/blob/master/Assignment3/HaveWeMetAPI.md)
+* 2019/10/29
+* 2019/10/31
+  * Due: Assignment 3 part 3
 * ...
 * 2019/12/17:
   * FINAL EXAM 4:15-6:15pm

@@ -1,5 +1,5 @@
 # Have we met? (part 3)
-Assigned: 2019/10/22
+Assigned: 2019/10/24
 Due: 2019/10/31
 
 ## Assignment Goals
