@@ -5,6 +5,7 @@ using System.Linq;
 using System.Net.Http;
 using System.Threading.Tasks;
 using WebPage______.Models;
+using System.Net.Http.Headers;
 
 namespace WebPage______.DataLayer
 {
@@ -20,7 +21,8 @@ namespace WebPage______.DataLayer
 			{
 				using (HttpRequestMessage request = new HttpRequestMessage(HttpMethod.Post, address))
 				{
-					request.Content = new StringContent(catName);
+					request.Content = new StringContent("\"" + catName + "\"");
+					request.Content.Headers.ContentType = new MediaTypeHeaderValue("application/json");
 					// .Result from an Async function is not best practice. It's good enough and I'm keeping this simple.
 					var response = client.SendAsync(request).Result;
 					var content = response.Content.ReadAsStringAsync().Result;

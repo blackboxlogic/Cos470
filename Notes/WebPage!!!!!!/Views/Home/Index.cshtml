@@ -10,7 +10,8 @@
 
     @{ foreach (var catName in Model.IdToName)
         {
-            <p>@catName</p>
+
+        <p>@(string.Join("", Enumerable.Range(0, catName.Key + 1).Select(n => "🐱").ToArray())) @catName.Value</p>
         }
     }
 
@@ -26,9 +27,10 @@ $.ajax({
     type: "Post", //HTTP VERB
     url: "/home/NewCat", //URL
     //dataType: 'json', //What type of response you expect back from the server
-    contentType: 'text/plain', //What type of data you are trying to send
-    data: document.getElementById('catField').value,
-    success: (x) => alert(x)
+    contentType: 'application/json', //What type of data you are trying to send
+    data: '"' + document.getElementById('catField').value + '"', // want quotes?
+    success: (x) => { location.reload(); },
+    error: (x) => alert(x + "!!!")
 })
 
 
