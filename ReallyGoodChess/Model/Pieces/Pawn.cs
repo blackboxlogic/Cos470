@@ -18,13 +18,50 @@ namespace Model.Pieces
 				&& board[forward.X, forward.Y] == null
 				&& board[forwardTwo.X, forwardTwo.Y] == null)
 			{
-				// Can jump two!
+				if(TryMove<Pawn>(board, forwardTwo, out var newBoard))
+				{
+					boards.Add(newBoard);
+				}
+			}
+			// Can move one forward (but not capture)
+			if (board[forward.X, forward.Y] == null)
+			{
+				
+				if (!IsOnBoard(forwardTwo))// if at the end (promote)
+				{
+					if (TryMove<Knight>(board, forward, out var newknight))
+					{
+						boards.Add(newknight);
+					}
+					// TODO, add the other peice types
+				}
+				if (TryMove<Pawn>(board, forward, out var newBoard))
+				{
+					boards.Add(newBoard);
+				}
+			}
+			// can capture diagonally one space left or right
+			var forwardLeft = Location + Front + new Vector(-1, 0);
+			if (IsOnBoard(forwardLeft)
+				&& board[forwardLeft.X, forwardLeft.Y] != null
+				&& board[forwardLeft.X, forwardLeft.Y].Color != Color)
+			{
+				if (TryMove<Pawn>(board, forwardLeft, out var newBoard))
+				{
+					boards.Add(newBoard);
+				}
+			}
+			var forwardRight = Location + Front + new Vector(1, 0);
+			if (IsOnBoard(forwardRight)
+				&& board[forwardRight.X, forwardRight.Y] != null
+				&& board[forwardRight.X, forwardRight.Y].Color != Color)
+			{
+				if (TryMove<Pawn>(board, forwardRight, out var newBoard))
+				{
+					boards.Add(newBoard);
+				}
 			}
 
-			// can capture diagonally one space left or right
-			// Can move one forward (but not capture)
-			// "Promotion", If you get to the end, turn into any peice, except kings or pawns
-			// king can't be in check after move
 			return boards.ToArray();
 		}
 	}

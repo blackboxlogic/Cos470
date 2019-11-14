@@ -26,5 +26,24 @@ namespace Model
 		{
 			return false; // fix when we have kings
 		}
+
+		protected bool TryMove<T>(Piece[,] board, Vector landingSpot, out Piece[,] result)
+			where T : Piece, new()
+		{
+			var newBoard = Clone(board);
+			//remove from where it was
+			newBoard[Location.X, Location.Y] = null;
+			//put in new place
+			newBoard[landingSpot.X, landingSpot.Y] =
+				new T() { Color = Color, HasMoved = true, Location = landingSpot };
+			if (!AmInCheck(newBoard))
+			{
+				result = newBoard;
+				return true;
+			}
+
+			result = null;
+			return false;
+		}
 	}
 }

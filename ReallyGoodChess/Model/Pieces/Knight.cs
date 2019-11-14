@@ -29,12 +29,7 @@ namespace Model.Pieces
 
 				if (IsOnBoard(landed)
 					&& board[landed.X, landed.Y]?.Color != Color) {
-					var newBoard = Clone(board);
-					//remove from where it was
-					newBoard[Location.X, Location.Y] = null;
-					//put in new place
-					newBoard[landed.X, landed.Y] = new Knight() { Color = Color, HasMoved = true, Location = landed } ;
-					if (!AmInCheck(newBoard))
+					if (TryMove<Knight>(board, landed, out var newBoard))
 					{
 						boards.Add(newBoard);
 					}
