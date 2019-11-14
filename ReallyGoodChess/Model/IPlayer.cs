@@ -6,5 +6,7 @@ namespace Model
 	{
 		string Name { get; }
 		Color Color { get; }
+
+		int ChooseMove(Piece[][,] options);
 	}
 }
