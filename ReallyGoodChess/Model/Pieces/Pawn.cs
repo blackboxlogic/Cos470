@@ -6,6 +6,8 @@ namespace Model.Pieces
 {
 	public class Pawn : Piece // Aka nobbly one down front
 	{
+		protected override char Char => '♙';
+
 		private Vector Front => new Vector(0, Color == Color.White ? 1 :-1);
 
 		public override Piece[][,] GetMoves(Piece[,] board)

@@ -11,6 +11,13 @@ namespace Model
 		public Vector Location;
 
 		public abstract Piece[][,] GetMoves(Piece[,] board);
+		private const char ToBlackChar = (char)('♚' - '♔');
+		protected abstract char Char { get; } // ♔♕♖♗♘♙ KQRBNP
+
+		public char AsColoredChar()
+		{
+			return (char)(Char + (int)Color * ToBlackChar);
+		}
 
 		protected bool IsOnBoard(Vector landed)
 		{

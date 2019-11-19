@@ -6,6 +6,8 @@ namespace Model.Pieces
 {
 	public class Knight : Piece // Aka Horsey, can jump, captures where it lands
 	{
+		protected override char Char => '♘';
+
 		private static Vector[] Directions = new Vector[] {
 			new Vector(-2, -1),
 			new Vector(-2, 1),
