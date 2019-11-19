@@ -17,47 +17,31 @@ namespace Model.Pieces
         {
             var boards = new List<Piece[,]>();
 
+			Action<Vector> continueDirection = d =>
+			{
+				while (IsOnBoard(d) && board[d.X, d.Y]?.Color != Color)
+				{
+					if (TryMove<Bishop>(board, d, out var newBoard))
+					{
+						boards.Add(newBoard);
+					}
+						d += ForwardRight;
+				}
+			};
+
             var moveForwardRight = Location + ForwardRight;
-            while (IsOnBoard(moveForwardRight) && board[moveForwardRight.X, moveForwardRight.Y]?.Color != Color)
-            {
-                if (TryMove<Bishop>(board, moveForwardRight, out var newBoard))
-                {
-                    boards.Add(newBoard);
-                }
-                moveForwardRight += ForwardRight;
-            }
+			continueDirection(moveForwardRight);
 
-            var moveForwardLeft = Location + ForwardLeft;
-            while (IsOnBoard(moveForwardLeft) && board[moveForwardLeft.X, moveForwardLeft.Y]?.Color != Color)
-            {
-                if (TryMove<Bishop>(board, moveForwardLeft, out var newBoard))
-                {
-                    boards.Add(newBoard);
-                }
-                moveForwardLeft += ForwardLeft;
-            }
+			var moveForwardLeft = Location + ForwardLeft;
+			continueDirection(moveForwardLeft);
 
-            var moveBackRight = Location + BackRight;
-            while (IsOnBoard(moveBackRight) && board[moveBackRight.X, moveBackRight.Y]?.Color != Color)
-            {
-                if (TryMove<Bishop>(board, moveBackRight, out var newBoard))
-                {
-                    boards.Add(newBoard);
-                }
-                moveBackRight += BackRight;
-            }
+			var moveBackRight = Location + BackRight;
+			continueDirection(moveBackRight);
 
-            var moveBackLeft = Location + BackLeft;
-            while (IsOnBoard(moveBackLeft) && board[moveBackLeft.X, moveBackLeft.Y]?.Color != Color)
-            {
-                if (TryMove<Bishop>(board, moveBackLeft, out var newBoard))
-                {
-                    boards.Add(newBoard);
-                }
-                moveBackLeft += BackLeft;
-            }
+			var moveBackLeft = Location + BackLeft;
+			continueDirection(moveBackLeft);
 
-            return boards.ToArray(); ;
+			return boards.ToArray(); ;
         }
     }
 }
