@@ -6,7 +6,11 @@ namespace Model.Pieces
 {
     public class King : Piece
     {
-        private static Vector[] Directions = new Vector[] { //all 8 directions from current location
+
+		protected override char Char => '♔';
+
+
+		private static Vector[] Directions = new Vector[] { //all 8 directions from current location
             new Vector(-1, -1), // bottom left diag
             new Vector(0, -1), // directly below
             new Vector(1, -1), // bottom right diag

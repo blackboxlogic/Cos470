@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Chess.Pieces
+namespace Model.Pieces
 {
     class Rook : Piece
     {
@@ -61,8 +61,10 @@ namespace Chess.Pieces
             new Vector(-7, 0)
         };
 
-        //I think this is done but check my work.****************
-        public override Piece[][,] GetMoves(Piece[,] board)
+		protected override char Char => '♖';
+
+		//I think this is done but check my work.****************
+		public override Piece[][,] GetMoves(Piece[,] board)
         {
             //New list to store potential moves
             var boards = new List<Piece[,]>();
