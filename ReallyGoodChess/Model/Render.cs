@@ -16,8 +16,10 @@ namespace Model
 				for (int y = 0; y < 8; y++)
 				{
 					var piece = board[x, y];
-					if(piece != null)
-						words.Append(piece.AsColoredChar());
+                    if (piece != null)
+                        words.Append(piece.AsColoredChar());
+                    else
+                        words.Append(" ");
 				}
 				words.Append(Environment.NewLine);
 			}
