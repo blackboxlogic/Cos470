@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Model.Pieces
 {
-    class Rook : Piece
+    public class Rook : Piece
     {
 
         private static Vector[] DirectionsAllWays = new Vector[] {
