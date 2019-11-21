@@ -68,15 +68,15 @@ namespace Model.Pieces
                             CloneBoardAndCheckCheck<Rook>(board, landed, out var newBoard);
                         }
                         //if there's a piece to capture add the move then break
-                        if (board[landed.X, landed.Y].Color != Color)
+                        else if (board[landed.X, landed.Y].Color != Color)
                         {
                             CloneBoardAndCheckCheck<Rook>(board, landed, out var newBoard);
                             break;
                         }
                         //if we get here it there is a piece of the same color so no more moves get added
-                        break;
+                        else break;
                     }
-                    break;
+                    else break;
                 }
             }
             return boards.ToArray();
