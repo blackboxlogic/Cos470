@@ -11,7 +11,7 @@ namespace ChessConsoleApp
 			{
 				for (int y = 0; y < 8; y++)
 				{
-					Console.BackgroundColor = (x + y) % 2 == 0 ? ConsoleColor.DarkGray : ConsoleColor.Gray;
+					Console.BackgroundColor = (x + y) % 2 == 1 ? ConsoleColor.DarkGray : ConsoleColor.Gray;
 					var piece = board[x, y];
 					if (piece != null)
 					{
