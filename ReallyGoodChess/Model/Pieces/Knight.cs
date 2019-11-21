@@ -31,7 +31,7 @@ namespace Model.Pieces
 
 				if (IsOnBoard(landed)
 					&& board[landed.X, landed.Y]?.Color != Color) {
-					if (TryMove<Knight>(board, landed, out var newBoard))
+					if (CloneBoardAndCheckCheck<Knight>(board, landed, out var newBoard))
 					{
 						boards.Add(newBoard);
 					}

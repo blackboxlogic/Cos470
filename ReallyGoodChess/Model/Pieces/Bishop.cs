@@ -23,7 +23,7 @@ namespace Model.Pieces
 				while (IsOnBoard(d) && board[d.X, d.Y]?.Color != Color && !captured)
 				{
 					captured = board[d.X, d.Y] != null;
-					if (TryMove<Bishop>(board, d, out var newBoard))
+					if (CloneBoardAndCheckCheck<Bishop>(board, d, out var newBoard))
 					{
 						boards.Add(newBoard);
 					}

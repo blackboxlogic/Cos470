@@ -20,7 +20,7 @@ namespace Model.Pieces
 				&& board[forward.X, forward.Y] == null
 				&& board[forwardTwo.X, forwardTwo.Y] == null)
 			{
-				if(TryMove<Pawn>(board, forwardTwo, out var newBoard))
+				if(CloneBoardAndCheckCheck<Pawn>(board, forwardTwo, out var newBoard))
 				{
 					boards.Add(newBoard);
 				}
@@ -31,13 +31,13 @@ namespace Model.Pieces
 				
 				if (!IsOnBoard(forwardTwo))// if at the end (promote)
 				{
-					if (TryMove<Knight>(board, forward, out var newknight))
+					if (CloneBoardAndCheckCheck<Knight>(board, forward, out var newknight))
 					{
 						boards.Add(newknight);
 					}
 					// TODO, add the other peice types
 				}
-				if (TryMove<Pawn>(board, forward, out var newBoard))
+				if (CloneBoardAndCheckCheck<Pawn>(board, forward, out var newBoard))
 				{
 					boards.Add(newBoard);
 				}
@@ -48,7 +48,7 @@ namespace Model.Pieces
 				&& board[forwardLeft.X, forwardLeft.Y] != null
 				&& board[forwardLeft.X, forwardLeft.Y].Color != Color)
 			{
-				if (TryMove<Pawn>(board, forwardLeft, out var newBoard))
+				if (CloneBoardAndCheckCheck<Pawn>(board, forwardLeft, out var newBoard))
 				{
 					boards.Add(newBoard);
 				}
@@ -58,7 +58,7 @@ namespace Model.Pieces
 				&& board[forwardRight.X, forwardRight.Y] != null
 				&& board[forwardRight.X, forwardRight.Y].Color != Color)
 			{
-				if (TryMove<Pawn>(board, forwardRight, out var newBoard))
+				if (CloneBoardAndCheckCheck<Pawn>(board, forwardRight, out var newBoard))
 				{
 					boards.Add(newBoard);
 				}

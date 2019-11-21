@@ -34,7 +34,7 @@ namespace Model
 			return false; // fix when we have kings
 		}
 
-		protected bool TryMove<T>(Piece[,] board, Vector landingSpot, out Piece[,] result)
+		protected bool CloneBoardAndCheckCheck<T>(Piece[,] board, Vector landingSpot, out Piece[,] result)
 			where T : Piece, new()
 		{
 			var newBoard = Clone(board);
