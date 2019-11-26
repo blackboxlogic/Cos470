@@ -11,6 +11,8 @@ namespace Model
 		public Stack<Piece[,]> History; // BoardStack
 		public Color Turn;
 
+		public Piece[,] CurrentBoard => History.Peek();
+
 		public Piece[][,] GetMoves()
 		{
 			List<Piece[,]> options = new List<Piece[,]>();

@@ -31,11 +31,23 @@ namespace Model.Pieces
 				
 				if (!IsOnBoard(forwardTwo))// if at the end (promote)
 				{
-					if (CloneBoardAndCheckCheck<Knight>(board, forward, out var newknight))
+					Piece[,] newPromotedBoard;
+					if (CloneBoardAndCheckCheck<Knight>(board, forward, out newPromotedBoard))
 					{
-						boards.Add(newknight);
+						boards.Add(newPromotedBoard);
 					}
-					// TODO, add the other peice types
+					if (CloneBoardAndCheckCheck<Rook>(board, forward, out newPromotedBoard))
+					{
+						boards.Add(newPromotedBoard);
+					}
+					if (CloneBoardAndCheckCheck<King>(board, forward, out newPromotedBoard))
+					{
+						boards.Add(newPromotedBoard);
+					}
+					if (CloneBoardAndCheckCheck<Bishop>(board, forward, out newPromotedBoard))
+					{
+						boards.Add(newPromotedBoard);
+					}
 				}
 				if (CloneBoardAndCheckCheck<Pawn>(board, forward, out var newBoard))
 				{

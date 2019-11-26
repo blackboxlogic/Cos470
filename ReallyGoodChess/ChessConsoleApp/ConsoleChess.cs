@@ -2,6 +2,7 @@
 using Model.Pieces;
 
 using System;
+using System.Collections.Generic;
 using System.Text;
 
 namespace ChessConsoleApp
@@ -12,7 +13,7 @@ namespace ChessConsoleApp
 // Rook doesn't have any moves ever
 // Bishup can jump opponients
 // some other front end
-// Make an "inteligentll" player
+// Make an "intelligent" player
 
     class ChessConsoleApp
     {
@@ -60,18 +61,43 @@ namespace ChessConsoleApp
             ChessConsoleApp app = new ChessConsoleApp();
 			Game game = app.SetUp();
 
-			Console.WriteLine("Current Board:");
-			game.History.Peek().ToConsole();
+			IPlayer player1 = new DumbPlayer() { Name = "player1", Color = Color.White };
+			IPlayer player2 = new DumbPlayer() { Name = "Other player!", Color = Color.Black };
+			Queue<IPlayer> players = new Queue<IPlayer>(new[] { player1, player2 });
 
-			Console.WriteLine(game.Turn + " Options:");
-			var moves = game.GetMoves();
-			foreach (var move in moves)
+			do
 			{
-				move.ToConsole();
-				Console.WriteLine("================");
-			}
+				Console.WriteLine("Current Board:");
+				game.CurrentBoard.ToConsole();
+				Console.WriteLine(game.Turn + " Options:");
+				var moves = game.GetMoves();
+				var player = GetNextPlayer(players);
+				int moveIndex = player.ChooseMove(moves);
+				game.PlayMove(moves[moveIndex]);
+				Console.ReadKey(true); // Maybe?
+			} while (!HasLost(game));
+
+			Console.WriteLine(game.Turn + " LOST!");
 
 			Console.ReadKey(true);
         }
-    }
+
+		private static bool HasLost(Game game)
+		{
+			foreach(Piece p in game.CurrentBoard)
+			{
+				if (p?.Color == game.Turn) return false;
+			}
+
+			return true;
+		}
+
+		private static IPlayer GetNextPlayer(Queue<IPlayer> players) // and rotate the Q
+		{
+			var nextPlayer = players.Dequeue();
+			players.Enqueue(nextPlayer);
+			return nextPlayer;
+		}
+
+	}
 }
