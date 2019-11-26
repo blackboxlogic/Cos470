@@ -6,10 +6,12 @@ namespace Model.Pieces
 {
     public class Bishop : Piece
     {
-        private Vector ForwardRight => new Vector(1, 1);
-        private Vector ForwardLeft => new Vector(-1, 1);
-        private Vector BackRight => new Vector(1, -1);
-        private Vector BackLeft => new Vector(-1, -1);
+        private Vector[] directions = { new Vector(1, 1),
+            new Vector(-1, 1),
+            new Vector(1, -1),
+            new Vector(-1, -1)
+        };
+ 
 
         protected override char Char => '♗';
 
@@ -20,30 +22,24 @@ namespace Model.Pieces
 			Action<Vector> continueDirection = d =>
 			{
 				bool captured = false;
-				while (IsOnBoard(d) && board[d.X, d.Y]?.Color != Color && !captured)
+                var looking = Location + d;
+				while (IsOnBoard(looking) && board[looking.X, looking.Y]?.Color != Color && !captured)
 				{
-					captured = board[d.X, d.Y] != null;
-					if (CloneBoardAndCheckCheck<Bishop>(board, d, out var newBoard))
+					captured = board[looking.X, looking.Y] != null;
+					if (CloneBoardAndCheckCheck<Bishop>(board, looking, out var newBoard))
 					{
 						boards.Add(newBoard);
 					}
-					d += ForwardRight;
+                    looking += d;
 				}
 			};
 
-            var moveForwardRight = Location + ForwardRight;
-			continueDirection(moveForwardRight);
+            foreach(Vector d in directions)
+            {
+                continueDirection(d);
+            }
 
-			var moveForwardLeft = Location + ForwardLeft;
-			continueDirection(moveForwardLeft);
-
-			var moveBackRight = Location + BackRight;
-			continueDirection(moveBackRight);
-
-			var moveBackLeft = Location + BackLeft;
-			continueDirection(moveBackLeft);
-
-			return boards.ToArray(); ;
+			return boards.ToArray(); 
         }
     }
 }
