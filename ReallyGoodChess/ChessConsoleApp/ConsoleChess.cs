@@ -62,9 +62,9 @@ namespace ChessConsoleApp
             ChessConsoleApp app = new ChessConsoleApp();
 			Game game = app.SetUp();
 
-			IPlayer player1 = new DumbPlayer() { Name = "player1", Color = Color.White };
-			IPlayer player2 = new DumbPlayer() { Name = "Other player!", Color = Color.Black };
-			Queue<IPlayer> players = new Queue<IPlayer>(new[] { player1, player2 });
+			Player player1 = new DumbPlayer() { Name = "player1", Color = Color.White };
+			Player player2 = new DumbPlayer() { Name = "Other player!", Color = Color.Black };
+			Queue<Player> players = new Queue<Player>(new[] { player1, player2 });
 
 			Piece[,] lastBoard = null;
 
@@ -104,7 +104,7 @@ namespace ChessConsoleApp
 			return true;
 		}
 
-		private static IPlayer GetNextPlayer(Queue<IPlayer> players) // and rotate the Q
+		private static Player GetNextPlayer(Queue<Player> players) // and rotate the Q
 		{
 			var nextPlayer = players.Dequeue();
 			players.Enqueue(nextPlayer);
