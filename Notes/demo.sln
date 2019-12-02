@@ -11,7 +11,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebPage!!!!!!", "WebPage!!!
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebThing", "WebThing\WebThing.csproj", "{E9A0CA1E-9FB5-4F69-9510-E614566DA4A6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccessLayer", "..\DataAccessLayer\DataAccessLayer.csproj", "{CAE3290A-EF67-48FA-9258-EE2CC4E26BA6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataAccessLayer", "..\DataAccessLayer\DataAccessLayer.csproj", "{CAE3290A-EF67-48FA-9258-EE2CC4E26BA6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebPageWithAuth", "..\WebPageWithAuth\WebPageWithAuth.csproj", "{772ADC9F-B13E-43F6-AB97-2FBEA391A61B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{CAE3290A-EF67-48FA-9258-EE2CC4E26BA6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CAE3290A-EF67-48FA-9258-EE2CC4E26BA6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CAE3290A-EF67-48FA-9258-EE2CC4E26BA6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{772ADC9F-B13E-43F6-AB97-2FBEA391A61B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{772ADC9F-B13E-43F6-AB97-2FBEA391A61B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{772ADC9F-B13E-43F6-AB97-2FBEA391A61B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{772ADC9F-B13E-43F6-AB97-2FBEA391A61B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

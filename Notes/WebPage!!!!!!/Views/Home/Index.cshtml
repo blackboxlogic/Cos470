@@ -3,38 +3,60 @@
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome TO A StOrE</h1>
-    <p>Buy the thINgs</p>
+    <div class="text-center">
+        <h1 class="display-4">Welcome TO A StOrE</h1>
+        <p>Buy the thINgs</p>
 
 
-    @{ foreach (var catName in Model.IdToName)
-        {
+        <input type="text" id="catField" />
+        <button onclick="submit()"> add a cat</button>
 
-        <p>@(string.Join("", Enumerable.Range(0, catName.Key + 1).Select(n => "🐱").ToArray())) @catName.Value</p>
+
+        @{ foreach (var catName in Model.IdToName)
+            {
+                <p>
+                    @(string.Join("", Enumerable.Range(0, catName.Key + 1).Select(n => "🐱").ToArray())) @catName.Value
+                    <button onclick="deletify(@(catName.Key))">Meow?</button>
+                </p>
+            }
         }
-    }
 
-    <input type="text" id="catField" />
-    <button onclick="submit()"> add a cat</button>
+        <script>
+            function submit() {
 
-<script>
-    function submit()
-    {
-        
+                //        terrible things:
+                //meowing a cat puts an old name back in the box
+                //reload when adding a cat
+                //no styling
+                //icons
 
-$.ajax({
-    type: "Post", //HTTP VERB
-    url: "/home/NewCat", //URL
-    //dataType: 'json', //What type of response you expect back from the server
-    contentType: 'application/json', //What type of data you are trying to send
-    data: '"' + document.getElementById('catField').value + '"', // want quotes?
-    success: (x) => { location.reload(); },
-    error: (x) => alert(x + "!!!")
-})
+                //Basic Authentication
 
+                // https://www.w3schools.com/jsref/jsref_replace.asp
+                var newName = document.getElementById('catField').value;
+                newName = newName.replace(/"/g, '\\"');
 
-    }
+                $.ajax({
+                    type: "Post",
+                    url: "/home/NewCat",
+                    contentType: 'application/json',
+                    data: '"' + newName + '"',
+                    success: (x) => { location.reload(); },
+                    error: (x) => alert(x + "!!!")
+                })
+            }
 
-</script>
-</div>
+            function deletify(id) {
+                $.ajax({
+                    type: "Delete", //HTTP VERB
+                    url: "/home/deletify", //URL
+                    //dataType: 'json', //What type of response you expect back from the server
+                    contentType: 'application/json', //What type of data you are trying to send
+                    data: '"' + id + '"',
+                    success: (x) => { location.reload(); },
+                    error: (x) => alert(x + "!!!")
+                })
+            }
+
+        </script>
+    </div>
