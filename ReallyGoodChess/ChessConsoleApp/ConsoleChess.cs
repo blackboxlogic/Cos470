@@ -3,6 +3,7 @@ using Model.Pieces;
 
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 
 namespace ChessConsoleApp
@@ -65,18 +66,29 @@ namespace ChessConsoleApp
 			IPlayer player2 = new DumbPlayer() { Name = "Other player!", Color = Color.Black };
 			Queue<IPlayer> players = new Queue<IPlayer>(new[] { player1, player2 });
 
+			Piece[,] lastBoard = null;
+
 			do
 			{
 				Console.WriteLine("Current Board:");
-				game.CurrentBoard.ToConsole();
-				Console.WriteLine(game.Turn + " Options:");
+				game.CurrentBoard.ToConsole(lastBoard);
+				lastBoard = game.CurrentBoard;
 				var moves = game.GetMoves();
+				Console.WriteLine(game.Turn + " Options:");
+				//foreach (var move in moves)
+				//{
+				//	move.ToConsole(game.CurrentBoard);
+				//	Console.WriteLine("================");
+				//}
+
 				var player = GetNextPlayer(players);
 				int moveIndex = player.ChooseMove(moves);
 				game.PlayMove(moves[moveIndex]);
-				Console.ReadKey(true); // Maybe?
+				//Console.ReadKey(true); // Maybe?
+				System.Threading.Thread.Sleep(500);
 			} while (!HasLost(game));
 
+			game.CurrentBoard.ToConsole(lastBoard);
 			Console.WriteLine(game.Turn + " LOST!");
 
 			Console.ReadKey(true);

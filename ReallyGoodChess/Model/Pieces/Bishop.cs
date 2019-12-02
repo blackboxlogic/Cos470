@@ -11,7 +11,6 @@ namespace Model.Pieces
             new Vector(1, -1),
             new Vector(-1, -1)
         };
- 
 
         protected override char Char => '♗';
 
