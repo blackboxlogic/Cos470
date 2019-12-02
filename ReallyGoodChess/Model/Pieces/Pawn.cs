@@ -26,7 +26,7 @@ namespace Model.Pieces
 				}
 			}
 			// Can move one forward (but not capture)
-			if (board[forward.X, forward.Y] == null)
+			if (IsOnBoard(forward) && board[forward.X, forward.Y] == null)
 			{
 				
 				if (!IsOnBoard(forwardTwo))// if at the end (promote)
@@ -55,7 +55,7 @@ namespace Model.Pieces
 				}
 			}
 			// can capture diagonally one space left or right
-			var forwardLeft = Location + Front + new Vector(-1, 0);
+			var forwardLeft = Location + Front + new Vector(0, -1);
 			if (IsOnBoard(forwardLeft)
 				&& board[forwardLeft.X, forwardLeft.Y] != null
 				&& board[forwardLeft.X, forwardLeft.Y].Color != Color)
@@ -65,7 +65,7 @@ namespace Model.Pieces
 					boards.Add(newBoard);
 				}
 			}
-			var forwardRight = Location + Front + new Vector(1, 0);
+			var forwardRight = Location + Front + new Vector(0, 1);
 			if (IsOnBoard(forwardRight)
 				&& board[forwardRight.X, forwardRight.Y] != null
 				&& board[forwardRight.X, forwardRight.Y].Color != Color)
