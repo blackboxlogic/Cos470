@@ -1,12 +1,11 @@
 ﻿using System;
-using System.Linq;
 
 namespace Model
 {
 	public abstract class Player
 	{
-		public string Name { get; }
-		public Color Color { get; }
+		public string Name;
+		public Color Color;
 
 		public int ChooseMove(Piece[][,] options)
 		{
