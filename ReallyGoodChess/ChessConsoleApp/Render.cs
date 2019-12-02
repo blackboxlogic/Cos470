@@ -5,13 +5,18 @@ namespace ChessConsoleApp
 {
 	public static class Render
 	{
-		public static void ToConsole(this Piece[,] board)
+		public static void ToConsole(this Piece[,] board, Piece[,] lastBoard = null)
 		{
 			for (int x = 0; x < 8; x++)
 			{
 				for (int y = 0; y < 8; y++)
 				{
 					Console.BackgroundColor = (x + y) % 2 == 1 ? ConsoleColor.DarkGray : ConsoleColor.Gray;
+					if (lastBoard != null && lastBoard[x, y] != board[x, y])
+					{
+						Console.BackgroundColor = ConsoleColor.Cyan;
+					}
+
 					var piece = board[x, y];
 					if (piece != null)
 					{
@@ -26,6 +31,9 @@ namespace ChessConsoleApp
 				}
 				Console.WriteLine();
 			}
+
+			Console.BackgroundColor = ConsoleColor.Black;
+			Console.ForegroundColor = ConsoleColor.White;
 		}
 	}
 }
