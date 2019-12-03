@@ -1,6 +1,6 @@
 # Really Good Chess
 Assigned: 2019/12/03
-Due: 2019/21/03
+Due: 2019/12/12
 
 ### Objective
 * Practice the features of C#, and be creative, and maybe do something that interests you?

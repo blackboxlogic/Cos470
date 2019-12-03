@@ -77,6 +77,11 @@ An overview of the c#.Net, covering language details and applications that can b
 * 2019/10/31
   * Due: Assignment 3 part 3
 * ...
+* 2019/12/03
+  * Start: [Assignment4 Really Good Chess](https://github.com/blackboxlogic/ReallyGoodChess)
+* ...
+* 2019/12/12
+  * Due: Assignment4
 * 2019/12/17:
   * FINAL EXAM 4:15-6:15pm
 
