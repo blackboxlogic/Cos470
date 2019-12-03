@@ -15,9 +15,9 @@ Don't like all this chess stuff? Shoot me an email with a different project idea
 
 ### Part 1 (50 points)
 * Make a new type of chess piece (Inherits `BasePiece`)
-** Your piece should be not be over-powered or useless or like any other piece
-** Your piece should use a [different symbol](https://unicode-table.com/en) when displayed on the board
-** Add this new piece in that gap next to the kings on the starting board
+  * Your piece should be not be over-powered or useless or like any other piece
+  * Your piece should use a [different symbol](https://unicode-table.com/en) when displayed on the board
+  * Add this new piece in that gap next to the kings on the starting board
 
 Some inspiration:
 * Odd movement patterns
@@ -37,10 +37,10 @@ You can use any third party API or nuget package but remember that our version o
 
 **OR**
 
-Make a new type of "human" chess player (Inherits `BasePlayer`)
-** This player will allow a human player to choose moves
-** User chooses their player name
-** User may only choose moves that are legal
+* Make a new type of "human" chess player (Inherits `BasePlayer`)
+  * This player will allow a human player to choose moves
+  * User chooses their player name
+  * User may only choose moves that are legal
 
 **OR**
 
