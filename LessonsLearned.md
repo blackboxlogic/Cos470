@@ -9,4 +9,6 @@
 *** Large groups will just have people sitting around
 ** ask for questions
 ** ask for answers, call on people
-* ...
+* If i update my stuff to the latest, the whole class will always be a version behind.
+** pick an SDK version, a VS version, and stay with it.
+** This applies to sample code, starter code, and class projects.
