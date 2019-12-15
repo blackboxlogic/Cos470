@@ -96,31 +96,31 @@ public Dog GetFirstDogWithACatsName(Dog[] dogs, Cat[] cats)
 Write the number of the definition next to the matching word.
 Not all words and definitions have a match, *if they don't match, don't match them*.
 
-1. A declarative markup language used which simplifies the creation of a UI for a .NET desktop app.
-1. A generic data structure which stores key-value-pairs and has efficient O(1) lookup operations.
+1. A declarative markup language which simplifies the creation of a UI for a .NET desktop app.
+1. A generic data structure which stores key-value pairs and has efficient O(1) lookup operations.
 1. A type of function which calls itself.
-1. A Cross-platform, open-source development platform supported by Microsoft.
+1. A cross-platform, open-source development platform supported by Microsoft.
 1. A keyword which prevents two threads from executing in a code block at the same time.
 1. A keyword which modifies things so they belong to the type itself, *not to an instance* of the type.
 
 * xaml
-* .net Framework
-* winforms
-* .net Core
-* HashSet<T>
-* static
-* readonly
+* .Net Framework
 * yield
+* winforms
+* .Net Core
+* HashSet<T>
+* readonly
 * break
-* .net Standard
+* .Net Standard
+* static
 * Dictionary<T>
 * lock
 * Contains()
 
 ### Write a Function (10 points)
-Write a function which takes a string and returns how many "condescending" letters are in the string. (g, j, q, p, and y).
+Write a function which takes a string and returns how many "descending" letters are in the string (lowercase g, j, q, p, and y).
 It could be used like this
-`int condescending = CountCondescendingLetters("Ping pong? Yes please!"); // Should be 4`
+`int descending = CountDescendingLetters("Ping pong? Yes please!"); // Should be 4`
 ```
 
 
@@ -143,20 +143,20 @@ It could be used like this
 ```
 
 ### Convince Me
-Convince me you know what these words mean. You could give a reason you would use one, explain what they do, or gives examples.
+Convince me you know what these words mean. You could give a reason you would use one, explain what they do, or show examples.
 * Solution File (3 points)
 ```
 
 
 
 ```
-* Project References (3 points)
+* Project Reference (3 points)
 ```
 
 
 
 ```
-* Nuget Package (3 points)
+* NuGet Package (3 points)
 ```
 
 
