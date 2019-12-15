@@ -1,7 +1,7 @@
 # Final Exam 2019/12/17 (4:15pm-6:15pm)
 The final exam will be held in class on Tuesday 2019/12/17. You will not be allowed to use any reference while taking the exam. Bring a pen.
 ### Ternary Statements (2 points)
-```
+```c#
 int i = 3;
 i += i < 5 ? 2 : 3;
 // What is the value of `i`? _______
@@ -11,7 +11,7 @@ i += i < 5 ? 4 : 6;
 
 ### Thread Safety (10 points)
 Consider this code that your co-worker wrote:
-```
+```c#
 class Program
 {
 	static void Main(string[] args)
@@ -21,7 +21,7 @@ class Program
 	}
 }
 
-class House
+public class House
 {
 	int Beds;
 	int Baths;
@@ -56,7 +56,7 @@ Building a house involves some time-consuming operation and your co-worker saves
 
 ### Efficient Algorithms (10 points)
 Your co-worker wrote this code and there are a *lot* of dogs and cats. It runs *really* slow. Re-write it (fix this so it is *better* than `O(n^2)`).
-```
+```c#
 public Dog GetFirstDogWithACatsName(Dog[] dogs, Cat[] cats)
 {
 	foreach (Cat cat in cats)
