@@ -36,7 +36,7 @@ public class House
 	}
 }
 ```
-Building a house involves some time-consuming operation and your co-worker saves time by making many of them *in parallel*. But, after making 10,000 houses, the console output shows that it only made 9,665 houses. Show how you would fix the to **make it thread-safe** (outputting 10,000) without removing the multi-threading.
+Building a `House` involves some time-consuming operation and your co-worker saves time by making many of them *in parallel*. But, after making 10,000 `House`s, the console output shows that it only made 9,665 `House`s. Show how you would fix the `House` class to **make it thread-safe** (outputting 10,000) without removing the multi-threading.
 ```
 
 
@@ -55,7 +55,7 @@ Building a house involves some time-consuming operation and your co-worker saves
 ```
 
 ### Efficient Algorithms (10 points)
-Your co-worker wrote this code and there are a *lot* of dogs and cats. It runs *really* slow. Re-write it (fix this so it is *better* than `O(n^2)`).
+Your co-worker wrote this code and there are a *lot* of `Dog`s and `Cat`s. It runs *really* slow. Re-write it (fix this so it is *better* than `O(n^2)`).
 ```c#
 public Dog GetFirstDogWithACatsName(Dog[] dogs, Cat[] cats)
 {
@@ -96,12 +96,12 @@ public Dog GetFirstDogWithACatsName(Dog[] dogs, Cat[] cats)
 Write the number of the definition next to the matching word.
 Not all words and definitions have a match, *if they don't match, don't match them*.
 
-# A declarative markup language used which simplifies the creation of a UI for a .NET desktop app.
-# A generic data structure which stores key-value-pairs and has efficient O(1) lookup operations.
-# A type of function which calls itself.
-# A Cross-platform, open-source development platform supported by Microsoft.
-# A keyword which prevents two threads from executing in a code block at the same time.
-# A keyword which modifies things so they belong to the type itself, *not to an instance* of the type.
+1. A declarative markup language used which simplifies the creation of a UI for a .NET desktop app.
+1. A generic data structure which stores key-value-pairs and has efficient O(1) lookup operations.
+1. A type of function which calls itself.
+1. A Cross-platform, open-source development platform supported by Microsoft.
+1. A keyword which prevents two threads from executing in a code block at the same time.
+1. A keyword which modifies things so they belong to the type itself, *not to an instance* of the type.
 
 * xaml
 * .net Framework
