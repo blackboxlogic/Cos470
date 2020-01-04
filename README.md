@@ -86,6 +86,17 @@ An overview of the c#.Net, covering language details and applications that can b
   * FINAL EXAM 4:15-6:15pm
 
 ## Grading
+96-100 a
+90-95 a- 
+87-89 b+ 
+83-86 b
+80-82 b-
+77-79 c+
+73-76 c
+70-72 c-
+60-69 d
+0-60 f
+
 #### Assignments 60% of course
 * 80% Does your project functionally meet the goals
   * 50% Output is as expected
